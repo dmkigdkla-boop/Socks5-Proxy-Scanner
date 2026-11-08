@@ -85,16 +85,21 @@ class SubscriptionGenerator:
     
     def generate_socks5_subscriptions(self):
         """生成多层级 SOCKS5 订阅文件"""
+        socks5_proxies = [
+            p for p in self.proxies
+            if p.get('protocol', 'socks5').lower() == 'socks5'
+        ]
+
         # 1. 标准版（所有有效代理，评分 >= 10）
-        all_valid = [p for p in self.proxies if self._get_score(p) >= 10.0]
+        all_valid = [p for p in socks5_proxies if self._get_score(p) >= 10.0]
         all_valid.sort(key=lambda x: self._get_score(x), reverse=True)
         
         # 2. 高质量版（评分 >= 70）
-        premium = [p for p in self.proxies if self._get_score(p) >= 70.0]
+        premium = [p for p in socks5_proxies if self._get_score(p) >= 70.0]
         premium.sort(key=lambda x: self._get_score(x), reverse=True)
         
         # 3. 快速版（响应时间 < 2s）
-        fast = [p for p in self.proxies 
+        fast = [p for p in socks5_proxies
                 if self._get_score(p) >= 10.0 
                 and p.get('response_time', 999) < 2.0]
         fast.sort(key=lambda x: x.get('response_time', 999))

@@ -22,8 +22,19 @@ class ResultExporter:
         if not proxies:
             self.logger.warning("没有有效的代理可以导出；将发布空结果以避免保留过期代理")
         
-        # 按评分排序（优先使用rating中的overall_score，如果没有则使用旧的score）
-        proxies.sort(key=lambda x: x.get('rating', {}).get('overall_score', x.get('score', 0)), reverse=True)
+        # 优先输出目标地区；其余国家仍完整保留，并在各优先级内按评分排序。
+        priority_order = {
+            country.casefold(): index
+            for index, country in enumerate(getattr(self.config, 'priority_countries', []))
+        }
+
+        def sort_key(proxy: Dict):
+            country = str(proxy.get('country', '')).casefold()
+            priority = priority_order.get(country, len(priority_order))
+            score = proxy.get('rating', {}).get('overall_score', proxy.get('score', 0))
+            return (priority, -score)
+
+        proxies.sort(key=sort_key)
         
         # 导出JSON格式
         await self._export_json(proxies)

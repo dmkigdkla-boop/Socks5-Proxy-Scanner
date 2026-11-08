@@ -24,7 +24,8 @@ class Config:
     
     # 过滤配置
     min_score: float = 0.0
-    target_countries: List[str] = None  # 国家白名单
+    target_countries: List[str] = None  # 国家白名单；空列表表示保留所有国家
+    priority_countries: List[str] = None  # 仅影响导出顺序，不过滤结果
     
     def __post_init__(self):
         if self.sources is None:
@@ -65,27 +66,19 @@ class Config:
             ]
         
         if self.target_countries is None:
-            # 常用国家白名单 - 可以根据需要修改
-            # 💡 提示：留空 [] 表示不过滤国家
-            self.target_countries = [
-                # === 核心推荐 (优先级最高) ===
-                "United States",    # 🇺🇸 美国 - 代理最多，速度快
-                "Japan",           # 🇯🇵 日本 - 速度快，稳定
-                "Germany",         # 🇩🇪 德国 - 质量高，隐私好
-                "Singapore",       # 🇸🇬 新加坡 - 亚洲低延迟
-                "Netherlands",     # 🇳🇱 荷兰 - 欧洲优选
-                
-                # === 扩展选项 (可选保留) ===
-                "United Kingdom",  # 🇬🇧 英国 - 欧洲节点
-                "Canada",          # 🇨🇦 加拿大 - 北美备选
-                "France",          # 🇫🇷 法国 - 欧洲节点  
-                "South Korea",     # 🇰🇷 韩国 - 亚洲节点
-                "Taiwan",          # 🇹🇼 台湾 - 中文环境
-                "Switzerland",     # 🇨🇭 瑞士 - 隐私最佳
-                "Sweden",          # 🇸🇪 瑞典 - 北欧节点
-                "Australia",       # 🇦🇺 澳大利亚 - 大洋洲
-                
-                # ❌ 已移除: Hong Kong (审查风险，稳定性差)
+            # 不过滤国家；扫描完成后按 priority_countries 排序导出。
+            self.target_countries = []
+
+        if self.priority_countries is None:
+            self.priority_countries = [
+                # 首选
+                "Taiwan",
+                "Hong Kong",
+                # 东南亚
+                "Singapore", "Malaysia", "Thailand", "Vietnam", "Indonesia",
+                "Philippines", "Brunei", "Cambodia", "Laos", "Myanmar", "Timor-Leste",
+                # 东亚（台湾、香港已在首选中）
+                "Japan", "South Korea", "China", "Mongolia",
             ]
         
         # 国家名称映射（用于处理不同的国家名称格式）
@@ -95,6 +88,7 @@ class Config:
             "UK": "United Kingdom",
             "TW": "Taiwan",
             "KR": "South Korea",
+            "HK": "Hong Kong",
             "JP": "Japan",
             "SG": "Singapore",
             "CA": "Canada",

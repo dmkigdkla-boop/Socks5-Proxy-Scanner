@@ -108,96 +108,84 @@ class ProxyValidator:
         return filtered
     
     async def _validate_single_proxy(self, proxy: str) -> Dict:
-        """验证单个代理"""
+        """验证单个未标注协议的代理，并记录实际可用协议。"""
         async with self.semaphore:
             try:
                 ip, port = proxy.split(':')
                 port = int(port)
-                
-                start_time = time.time()
-                
-                connector = ProxyConnector.from_url(f"socks5://{proxy}")
-                
-                # 智能超时设置
-                # sock_connect=5: 连接超时（快速失败死代理）
-                # total=config.timeout: 总超时（给予数据传输足够时间）
-                conn_timeout = 5.0
-                total_timeout = float(self.config.timeout)
-                
-                async with aiohttp.ClientSession(
-                    connector=connector,
-                    timeout=aiohttp.ClientTimeout(total=total_timeout, sock_connect=conn_timeout)
-                ) as session:
-                    
-                    test_url = self.config.test_urls[0]
-                    async with session.get(test_url) as response:
-                        if response.status == 200:
-                            response_time = time.time() - start_time
-                            try:
-                                geo_info = await self._get_geo_info(session)
-                            except Exception as e:
-                                self.logger.debug(f"获取地理位置失败 (非致命): {e}")
-                                geo_info = {}
+            except ValueError:
+                return None
 
-                            # 创建完整的验证结果
-                            result = {
-                                'proxy': proxy,
-                                'ip': ip,
-                                'port': port,
-                                'is_valid': True,
-                                'response_time': response_time,
-                                'test_url': test_url,
-                                'country': geo_info.get('country', 'Unknown'),
-                                'country_code': self._get_country_code(geo_info.get('country', 'Unknown')),
-                                'city': geo_info.get('city', 'Unknown'),
-                                'isp': geo_info.get('isp', 'Unknown'),
-                                'is_mobile': geo_info.get('mobile', False),
-                                'is_proxy': geo_info.get('proxy', False),
-                                'anonymity_level': geo_info.get('anonymity', 'Unknown'),  # 新增
-                                'speed_tier': self._classify_speed(response_time),  # 新增
-                                'score': self._calculate_score(response_time, geo_info)
-                            }
-                            
-                            return result
-                        else:
-                            # 返回失败结果而不是 None
-                            return {
-                                'proxy': proxy,
-                                'ip': ip,
-                                'port': port,
-                                'is_valid': False,
-                                'error': f'HTTP {response.status}'
-                            }
-                            
-            except asyncio.TimeoutError:
-                # 显式捕获超时错误，不再打印到 debug
-                return {
-                    'proxy': proxy,
-                    'ip': ip,
-                    'port': port,
-                    'is_valid': False,
-                    'error': 'Timeout'
-                }
-            except Exception as e:
-                self.logger.debug(f"代理 {proxy} 验证时出错: {e}")
-                # 返回失败结果
+            errors = []
+            # 公开源通常不标注协议。短探测避免把每个失效地址的等待时间扩大三倍。
+            for protocol in ('socks5', 'http', 'https'):
                 try:
-                    ip, port = proxy.split(':')
-                    return {
-                        'proxy': proxy,
-                        'ip': ip,
-                        'port': int(port),
-                        'is_valid': False,
-                        'error': str(e)
-                    }
-                except:
-                    return None  # 如果连解析都失败，返回None
+                    result = await self._validate_with_protocol(proxy, ip, port, protocol)
+                    if result:
+                        return result
+                except Exception as e:
+                    errors.append(f'{protocol}: {e}')
+
+            return {
+                'proxy': proxy,
+                'ip': ip,
+                'port': port,
+                'is_valid': False,
+                'error': '; '.join(errors) or 'No supported proxy protocol'
+            }
+
+    async def _validate_with_protocol(self, proxy: str, ip: str, port: int, protocol: str) -> Dict:
+        """使用一个确定的协议探测代理。"""
+        probe_timeout = min(float(self.config.timeout), 4.0)
+        timeout = aiohttp.ClientTimeout(total=probe_timeout, sock_connect=min(3.0, probe_timeout))
+        proxy_url = f'{protocol}://{proxy}'
+        session_kwargs = {'timeout': timeout}
+        request_kwargs = {}
+
+        if protocol == 'socks5':
+            session_kwargs['connector'] = ProxyConnector.from_url(proxy_url)
+        else:
+            request_kwargs['proxy'] = proxy_url
+
+        start_time = time.time()
+        async with aiohttp.ClientSession(**session_kwargs) as session:
+            test_url = self.config.test_urls[0]
+            async with session.get(test_url, **request_kwargs) as response:
+                if response.status != 200:
+                    raise RuntimeError(f'HTTP {response.status}')
+
+            response_time = time.time() - start_time
+            try:
+                geo_info = await self._get_geo_info(session, request_kwargs.get('proxy'))
+            except Exception as e:
+                self.logger.debug(f"获取地理位置失败 (非致命): {e}")
+                geo_info = {}
+
+            return {
+                'proxy': proxy,
+                'ip': ip,
+                'port': port,
+                'protocol': protocol,
+                'is_valid': True,
+                'response_time': response_time,
+                'test_url': test_url,
+                'country': geo_info.get('country', 'Unknown'),
+                'country_code': self._get_country_code(geo_info.get('country', 'Unknown')),
+                'city': geo_info.get('city', 'Unknown'),
+                'isp': geo_info.get('isp', 'Unknown'),
+                'is_mobile': geo_info.get('mobile', False),
+                'is_proxy': geo_info.get('proxy', False),
+                'anonymity_level': geo_info.get('anonymity', 'Unknown'),
+                'speed_tier': self._classify_speed(response_time),
+                'score': self._calculate_score(response_time, geo_info)
+            }
     
-    async def _get_geo_info(self, session: aiohttp.ClientSession) -> Dict:
+    async def _get_geo_info(self, session: aiohttp.ClientSession, proxy_url: str = None) -> Dict:
         """获取地理位置信息（带速率限制保护）"""
         async with self.geo_semaphore:  # 控制并发调用
             try:
-                async with session.get("http://ip-api.com/json/") as response:
+                request_kwargs = {'proxy': proxy_url} if proxy_url else {}
+                async with session.get("http://ip-api.com/json/", **request_kwargs) as response:
                     if response.status == 200:
                         data = await response.json()
                         return {
@@ -245,6 +233,7 @@ class ProxyValidator:
             'Canada': 'CA',
             'France': 'FR',
             'South Korea': 'KR',
+            'Hong Kong': 'HK',
             'Taiwan': 'TW',
             'Switzerland': 'CH',
             'Sweden': 'SE',
