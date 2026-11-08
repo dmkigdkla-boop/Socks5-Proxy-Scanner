@@ -47,6 +47,7 @@ jobs:
           python proxy_scanner_enhanced.py \
             --timeout 10 \
             --max-concurrency 150 \
+            --output subscribe/proxies.json \
             --enable-blacklist \
             --auto-blacklist \
             --blacklist-threshold 1 \
@@ -54,7 +55,7 @@ jobs:
             --check-sources
           
           echo "Scan completed"
-          ls -lh proxies.json 2>/dev/null || echo "proxies.json not found"
+          ls -lh subscribe/proxies.json 2>/dev/null || echo "subscribe/proxies.json not found"
       
       # 5. Generate subscription files (for GitHub)
       - name: Generate subscription files
@@ -86,8 +87,8 @@ jobs:
         run: |
           echo "Uploading to Cloudflare KV..."
           
-          if [ ! -f proxies.json ]; then
-            echo "Warning: proxies.json not found, skipping KV upload"
+          if [ ! -f subscribe/proxies.json ]; then
+            echo "Warning: subscribe/proxies.json not found, skipping KV upload"
             exit 0
           fi
           
@@ -99,7 +100,8 @@ jobs:
           curl -X PUT "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/storage/kv/namespaces/${KV_NAMESPACE_ID}/values/current_proxies" \
             -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
             -H "Content-Type: application/json" \
-            --data-binary @proxies.json
+            --fail-with-body \
+            --data-binary @subscribe/proxies.json
           
           echo "Uploaded to Cloudflare KV (key: current_proxies)"
       
@@ -114,7 +116,7 @@ jobs:
           git add -f subscribe/*.txt subscribe/*.json subscribe/*.yaml 2>/dev/null || true
           git add -f subscribe/by-country/*.txt 2>/dev/null || true
           git add -f socks5.txt 2>/dev/null || true
-          git add -f proxies.json proxies.db 2>/dev/null || true
+          git add -f subscribe/proxies.json proxies.db 2>/dev/null || true
           
           # Show what will be committed
           echo "Files staged for commit:"
@@ -136,7 +138,7 @@ jobs:
         with:
           name: proxy-results-${{ github.run_number }}
           path: |
-            proxies.json
+            subscribe/proxies.json
             proxies.db
             subscribe/
           retention-days: 7
@@ -149,8 +151,8 @@ jobs:
           echo "# Proxy Pool Update Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
-          if [ -f proxies.json ]; then
-            PROXY_COUNT=$(python -c "import json; data=json.load(open('proxies.json')); print(data['metadata']['total'])" 2>/dev/null || echo "0")
+          if [ -f subscribe/proxies.json ]; then
+            PROXY_COUNT=$(python -c "import json; data=json.load(open('subscribe/proxies.json')); print(data['metadata']['total'])" 2>/dev/null || echo "0")
             echo "## Success" >> $GITHUB_STEP_SUMMARY
             echo "- Total proxies: ${PROXY_COUNT}" >> $GITHUB_STEP_SUMMARY
             echo "- Updated: $(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
@@ -171,7 +173,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
-            PROXY_COUNT=$(python -c "import json; data=json.load(open('proxies.json')); print(data['metadata']['total'])" 2>/dev/null || echo "0")
+            PROXY_COUNT=$(python -c "import json; data=json.load(open('subscribe/proxies.json')); print(data['metadata']['total'])" 2>/dev/null || echo "0")
             MSG="✅ Proxy Update Success: ${PROXY_COUNT} proxies found. Repo: https://github.com/${{ github.repository }}"
             curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -d "chat_id=${TELEGRAM_CHAT_ID}" -d "text=${MSG}"
             echo "Telegram success notification sent"

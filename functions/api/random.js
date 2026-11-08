@@ -43,21 +43,23 @@ export async function onRequest(context) {
         const randomProxy = proxyData.proxies[
             Math.floor(Math.random() * proxyData.proxies.length)
         ];
+        const metadata = proxyData.metadata || {};
+        const proxyAddress = randomProxy.proxy || `${randomProxy.ip}:${randomProxy.port}`;
 
         // 返回随机代理
         return new Response(JSON.stringify({
-            proxy: `${randomProxy.ip}:${randomProxy.port}`,
+            proxy: proxyAddress,
             ip: randomProxy.ip,
             port: randomProxy.port,
-            protocol: randomProxy.protocol,
+            protocol: randomProxy.protocol || 'socks5',
             country: randomProxy.country,
             country_code: randomProxy.country_code,
-            latency: randomProxy.latency,
+            latency: randomProxy.latency ?? randomProxy.response_time ?? null,
             score: randomProxy.score,
-            anonymity: randomProxy.anonymity,
+            anonymity: randomProxy.anonymity || randomProxy.anonymity_level || 'unknown',
             metadata: {
-                total_available: proxyData.metadata.total,
-                last_updated: proxyData.metadata.updated_at
+                total_available: metadata.total || proxyData.total_proxies || proxyData.proxies.length,
+                last_updated: metadata.updated_at || proxyData.timestamp || null
             }
         }), {
             status: 200,

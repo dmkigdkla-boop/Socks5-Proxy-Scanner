@@ -60,7 +60,7 @@ class ProxySourceManager:
         proxies = set()
         
         try:
-            async with self.session.get(url, ssl=False) as response:
+            async with self.session.get(url) as response:
                 if response.status != 200:
                     self.logger.warning(f"源 {url} 返回状态码 {response.status}")
                     return proxies

@@ -49,6 +49,17 @@ async function handleGet(context) {
             });
         }
 
+        // Accept legacy exports as well as the current schema. This lets a Pages
+        // deployment recover cleanly when an older value is still in KV.
+        if (!proxyData.metadata) {
+            proxyData.metadata = {
+                total: proxyData.total_proxies || proxyData.proxies?.length || 0,
+                updated_at: proxyData.timestamp || null,
+                update_time_utc: proxyData.timestamp || null,
+                description: 'SOCKS5 代理列表'
+            };
+        }
+
         // 返回代理数据
         return new Response(JSON.stringify(proxyData), {
             status: 200,

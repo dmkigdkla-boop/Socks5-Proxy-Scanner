@@ -7,7 +7,7 @@ import csv
 import logging
 from pathlib import Path
 from typing import List, Dict
-import time
+from datetime import datetime, timezone
 
 
 class ResultExporter:
@@ -20,8 +20,7 @@ class ResultExporter:
     async def export_results(self, proxies: List[Dict]):
         """导出代理结果"""
         if not proxies:
-            self.logger.warning("没有有效的代理可以导出")
-            return
+            self.logger.warning("没有有效的代理可以导出；将发布空结果以避免保留过期代理")
         
         # 按评分排序（优先使用rating中的overall_score，如果没有则使用旧的score）
         proxies.sort(key=lambda x: x.get('rating', {}).get('overall_score', x.get('score', 0)), reverse=True)
@@ -43,6 +42,19 @@ class ResultExporter:
         # 确保输出目录存在
         output_file.parent.mkdir(parents=True, exist_ok=True)
         
+        # Cloudflare Pages API and the static dashboard consume this schema.  Keep
+        # the legacy top-level fields below so existing subscription tooling stays
+        # compatible with previously generated files.
+        generated_at = datetime.now(timezone.utc).isoformat()
+        public_proxies = []
+        for proxy in proxies:
+            item = dict(proxy)
+            item.setdefault('protocol', 'socks5')
+            item.setdefault('latency', item.get('response_time'))
+            item.setdefault('anonymity', item.get('anonymity_level', 'unknown'))
+            item.setdefault('last_check', generated_at)
+            public_proxies.append(item)
+
         # 计算评分统计
         premium_count = sum(1 for p in proxies if p.get('rating', {}).get('quality_tier') == 'premium')
         standard_count = sum(1 for p in proxies if p.get('rating', {}).get('quality_tier') == 'standard')
@@ -50,9 +62,18 @@ class ResultExporter:
         poor_count = sum(1 for p in proxies if p.get('rating', {}).get('quality_tier') == 'poor')
         
         data = {
-            'timestamp': time.strftime('%Y-%m-%d %H:%M:%S'),
-            'total_proxies': len(proxies),
-            'avg_response_time': sum(p.get('response_time', 0) for p in proxies) / len(proxies),
+            'metadata': {
+                'total': len(public_proxies),
+                'updated_at': generated_at,
+                'update_time_utc': generated_at,
+                'description': 'SOCKS5 代理列表'
+            },
+            'timestamp': generated_at,
+            'total_proxies': len(public_proxies),
+            'avg_response_time': (
+                sum(p.get('response_time', 0) for p in proxies) / len(proxies)
+                if proxies else 0
+            ),
             'countries': list(set(p.get('country', 'Unknown') for p in proxies)),
             'quality_distribution': {
                 'premium': premium_count,
@@ -60,7 +81,7 @@ class ResultExporter:
                 'basic': basic_count,
                 'poor': poor_count
             },
-            'proxies': proxies
+            'proxies': public_proxies
         }
         
         with open(output_file, 'w', encoding='utf-8') as f:

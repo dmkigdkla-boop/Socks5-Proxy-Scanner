@@ -387,6 +387,25 @@
             return match ? match[1] : timeStr;
         }
 
+        function escapeHtml(value) {
+            return String(value ?? '').replace(/[&<>"']/g, char => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            }[char]));
+        }
+
+        function getProxyAddress(proxy) {
+            return proxy.proxy || `${proxy.ip ?? ''}:${proxy.port ?? ''}`;
+        }
+
+        function getAnonymity(proxy) {
+            return proxy.anonymity || proxy.anonymity_level || 'unknown';
+        }
+
+        function getLatency(proxy) {
+            const value = proxy.latency ?? proxy.response_time;
+            return typeof value === 'number' && Number.isFinite(value) ? value : null;
+        }
+
         // 渲染表格
         function renderTable() {
             const container = document.getElementById('tableContainer');
@@ -413,30 +432,39 @@
                         </tr>
                     </thead>
                     <tbody>
-                        ${allProxies.map((proxy, index) => `
+                        ${allProxies.map(proxy => {
+                            const address = getProxyAddress(proxy);
+                            const anonymity = getAnonymity(proxy);
+                            const latency = getLatency(proxy);
+                            const score = Number(proxy.score) || 0;
+                            return `
                             <tr>
-                                <td class="proxy-address">${proxy.ip}:${proxy.port}</td>
-                                <td><span class="badge badge-${proxy.anonymity}">${proxy.anonymity.toUpperCase()}</span></td>
+                                <td class="proxy-address">${escapeHtml(address)}</td>
+                                <td><span class="badge badge-${escapeHtml(anonymity)}">${escapeHtml(anonymity.toUpperCase())}</span></td>
                                 <td>
-                                    <span title="${proxy.country}">${proxy.country_code}</span>
-                                    ${proxy.country}
+                                    <span title="${escapeHtml(proxy.country)}">${escapeHtml(proxy.country_code)}</span>
+                                    ${escapeHtml(proxy.country)}
                                 </td>
-                                <td class="score-${getScoreClass(proxy.score)}">${proxy.score.toFixed(1)}</td>
-                                <td>${proxy.latency !== null ? proxy.latency.toFixed(2) + 's' : '-'}</td>
-                                <td>${formatLastCheck(proxy.last_check)}</td>
+                                <td class="score-${getScoreClass(score)}">${score.toFixed(1)}</td>
+                                <td>${latency !== null ? latency.toFixed(2) + 's' : '-'}</td>
+                                <td>${escapeHtml(formatLastCheck(proxy.last_check))}</td>
                                 <td>
-                                    <button class="btn" style="padding: 6px 12px; font-size: 0.85em;" 
-                                        onclick="copyProxy('${proxy.ip}:${proxy.port}')">
+                                    <button class="btn copy-proxy" style="padding: 6px 12px; font-size: 0.85em;"
+                                        data-proxy="${escapeHtml(address)}">
                                         复制
                                     </button>
                                 </td>
                             </tr>
-                        `).join('')}
+                        `;
+                        }).join('')}
                     </tbody>
                 </table>
             `;
 
             container.innerHTML = tableHTML;
+            container.querySelectorAll('.copy-proxy').forEach(button => {
+                button.addEventListener('click', () => copyProxy(button.dataset.proxy));
+            });
         }
 
         // 获取评分等级
@@ -468,7 +496,7 @@
                 return;
             }
 
-            const text = allProxies.map(p => `${p.ip}:${p.port}`).join('\n');
+            const text = allProxies.map(getProxyAddress).join('\n');
             navigator.clipboard.writeText(text).then(() => {
                 alert(`✅ 已复制 ${allProxies.length} 个代理地址`);
             }).catch(err => {
