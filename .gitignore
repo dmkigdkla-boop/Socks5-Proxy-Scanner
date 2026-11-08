@@ -70,6 +70,7 @@ desktop.ini
 *.tmp
 *.bak
 *.swp
+.wrangler/
 
 # 测试
 .pytest_cache/
