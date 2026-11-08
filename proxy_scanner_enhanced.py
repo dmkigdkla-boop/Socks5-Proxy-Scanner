@@ -8,6 +8,7 @@ import argparse
 import logging
 import sys
 import os
+import re
 from datetime import datetime
 
 from config import Config
@@ -18,6 +19,23 @@ from proxy_database import ProxyDatabase
 from enhanced_validator import EnhancedValidator, ProxyScorer
 from source_health_checker import SourceHealthChecker
 from timezone_utils import get_display_time
+
+
+PROXY_ADDRESS = re.compile(r'^(?:\d{1,3}\.){3}\d{1,3}:\d{1,5}$')
+
+
+def load_staged_candidates(file_path: str) -> set:
+    """Load de-duplicated IP:PORT candidates discovered by VPS workers."""
+    if not file_path or not os.path.isfile(file_path):
+        return set()
+
+    candidates = set()
+    with open(file_path, 'r', encoding='utf-8') as candidate_file:
+        for line in candidate_file:
+            address = line.strip()
+            if PROXY_ADDRESS.fullmatch(address):
+                candidates.add(address)
+    return candidates
 
 
 async def main():
@@ -46,6 +64,8 @@ async def main():
                        help='自动将持续失败的代理加入黑名单')
     parser.add_argument('--blacklist-threshold', type=int, default=5,
                        help='自动加入黑名单的失败次数阈值')
+    parser.add_argument('--candidate-file', type=str, default=None,
+                       help='VPS 发现器生成的 IP:PORT 候选文件')
     
     args = parser.parse_args()
     
@@ -96,6 +116,11 @@ async def main():
     logger.info("\n开始从代理源获取代理列表...")
     source_manager = ProxySourceManager(config)
     all_proxies = await source_manager.fetch_all_sources()
+
+    staged_candidates = load_staged_candidates(args.candidate_file)
+    if staged_candidates:
+        all_proxies.update(staged_candidates)
+        logger.info(f"✅ 已合并 {len(staged_candidates)} 个 VPS 发现候选")
     
     if not all_proxies:
         logger.error("❌ 未获取到任何代理")

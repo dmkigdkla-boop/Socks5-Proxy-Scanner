@@ -19,26 +19,54 @@ permissions:
 jobs:
   update-proxies:
     runs-on: ubuntu-latest
-    
+
     steps:
       # 1. Checkout code
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       # 2. Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
-      
+
       # 3. Install dependencies
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
-      
-      # 4. Run proxy scanner
+
+      # 4. Collect raw candidates discovered by VPS Java workers.
+      - name: Fetch VPS-discovered candidates
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          KV_NAMESPACE_ID: ${{ secrets.KV_NAMESPACE_ID }}
+        run: |
+          : > discovered_candidates.txt
+
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ] || [ -z "$KV_NAMESPACE_ID" ]; then
+            echo "Cloudflare secrets are not configured; skipping VPS candidate import"
+            exit 0
+          fi
+
+          KEYS=$(curl --fail-with-body --silent --show-error \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/storage/kv/namespaces/${KV_NAMESPACE_ID}/keys?prefix=discovered_candidates/" \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" | jq -r '.result[]?.name')
+
+          while IFS= read -r CANDIDATE_KEY; do
+            [ -z "$CANDIDATE_KEY" ] && continue
+            curl --fail-with-body --silent --show-error \
+              "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/storage/kv/namespaces/${KV_NAMESPACE_ID}/values/${CANDIDATE_KEY}" \
+              -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" | jq -r '.proxies[]?' >> discovered_candidates.txt
+          done <<< "$KEYS"
+
+          sort -u -o discovered_candidates.txt discovered_candidates.txt
+          echo "Imported $(wc -l < discovered_candidates.txt) unique VPS candidates"
+
+      # 5. Run proxy scanner
       - name: Run proxy scanner
         env:
           DATABASE_PATH: proxies.db
@@ -47,42 +75,23 @@ jobs:
         run: |
           mkdir -p subscribe
           chmod 755 subscribe
-          
+
           echo "Starting proxy scan..."
           python proxy_scanner_enhanced.py \
             --timeout 10 \
             --max-concurrency 300 \
             --output subscribe/proxies.json \
+            --candidate-file discovered_candidates.txt \
             --enable-blacklist \
             --auto-blacklist \
             --blacklist-threshold 1 \
             --cleanup-days 7 \
             --check-sources
-          
+
           echo "Scan completed"
           ls -lh subscribe/proxies.json 2>/dev/null || echo "subscribe/proxies.json not found"
-      
-      # 5. Generate subscription files (for GitHub)
-      - name: Generate subscription files
-        run: |
-          echo "Generating subscription files..."
-          
-          # Run subscription generator from optional directory with PYTHONPATH
-          if [ -f optional/subscription/subscription_generator.py ]; then
-            PYTHONPATH="${GITHUB_WORKSPACE}" python optional/subscription/subscription_generator.py
-          fi
-          
-          # Create main subscription file
-          if [ -f subscribe/socks5-all.txt ]; then
-            cp subscribe/socks5-all.txt socks5.txt
-            echo "Created socks5.txt with $(wc -l < socks5.txt) proxies"
-          fi
-          
-          # List generated files
-          echo "Generated subscription files:"
-          ls -lh subscribe/*.txt 2>/dev/null || echo "No txt files in subscribe/"
-      
-      # 6. Upload to Cloudflare KV (for API)
+
+      # 6. Publish validated data to the API before generating repository subscriptions.
       - name: Upload to Cloudflare KV
         if: success()
         env:
@@ -96,37 +105,57 @@ jobs:
             echo "Warning: Cloudflare secrets are not configured, skipping KV upload"
             exit 0
           fi
-          
+
           if [ ! -f subscribe/proxies.json ]; then
             echo "Warning: subscribe/proxies.json not found, skipping KV upload"
             exit 0
           fi
-          
+
           curl -X PUT "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/storage/kv/namespaces/${KV_NAMESPACE_ID}/values/current_proxies" \
             -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
             -H "Content-Type: application/json" \
             --fail-with-body \
             --data-binary @subscribe/proxies.json
-          
+
           echo "Uploaded to Cloudflare KV (key: current_proxies)"
-      
-      # 7. Commit and push changes (for GitHub subscription)
+
+      # 7. Generate subscription files (for GitHub)
+      - name: Generate subscription files
+        run: |
+          echo "Generating subscription files..."
+
+          # Run subscription generator from optional directory with PYTHONPATH
+          if [ -f optional/subscription/subscription_generator.py ]; then
+            PYTHONPATH="${GITHUB_WORKSPACE}" python optional/subscription/subscription_generator.py
+          fi
+
+          # Create main subscription file
+          if [ -f subscribe/socks5-all.txt ]; then
+            cp subscribe/socks5-all.txt socks5.txt
+            echo "Created socks5.txt with $(wc -l < socks5.txt) proxies"
+          fi
+
+          # List generated files
+          echo "Generated subscription files:"
+          ls -lh subscribe/*.txt 2>/dev/null || echo "No txt files in subscribe/"
+
+      # 8. Commit and push changes (for GitHub subscription)
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
+
           # Force add all subscription files (override .gitignore)
           echo "Adding subscription files..."
           git add -f subscribe/*.txt subscribe/*.json subscribe/*.yaml 2>/dev/null || true
           git add -f subscribe/by-country/*.txt 2>/dev/null || true
           git add -f socks5.txt 2>/dev/null || true
           git add -f subscribe/proxies.json proxies.db 2>/dev/null || true
-          
+
           # Show what will be committed
           echo "Files staged for commit:"
           git status --short
-          
+
           # Check if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
@@ -135,7 +164,7 @@ jobs:
             git push
             echo "Changes pushed successfully"
           fi
-      
+
       # 8. Backup to Artifacts
       - name: Backup to Artifacts
         uses: actions/upload-artifact@v4
@@ -148,14 +177,14 @@ jobs:
             subscribe/
           retention-days: 7
           if-no-files-found: warn
-      
+
       # 9. Generate summary
       - name: Generate summary
         if: always()
         run: |
           echo "# Proxy Pool Update Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          
+
           if [ -f subscribe/proxies.json ]; then
             PROXY_COUNT=$(python -c "import json; data=json.load(open('subscribe/proxies.json')); print(data['metadata']['total'])" 2>/dev/null || echo "0")
             echo "## Success" >> $GITHUB_STEP_SUMMARY
