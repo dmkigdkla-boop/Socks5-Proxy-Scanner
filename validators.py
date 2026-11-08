@@ -136,8 +136,9 @@ class ProxyValidator:
 
     async def _validate_with_protocol(self, proxy: str, ip: str, port: int, protocol: str) -> Dict:
         """使用一个确定的协议探测代理。"""
-        probe_timeout = min(float(self.config.timeout), 4.0)
-        timeout = aiohttp.ClientTimeout(total=probe_timeout, sock_connect=min(3.0, probe_timeout))
+        # 对无响应地址快速失败；仍允许后续协议继续探测。
+        probe_timeout = min(float(self.config.timeout), 3.0)
+        timeout = aiohttp.ClientTimeout(total=probe_timeout, sock_connect=min(2.5, probe_timeout))
         proxy_url = f'{protocol}://{proxy}'
         session_kwargs = {'timeout': timeout}
         request_kwargs = {}

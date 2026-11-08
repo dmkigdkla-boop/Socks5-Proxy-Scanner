@@ -25,7 +25,7 @@ async def main():
     # 解析命令行参数
     parser = argparse.ArgumentParser(description='SOCKS5代理扫描器 (增强版)')
     parser.add_argument('--timeout', type=int, default=10, help='超时时间(秒)')
-    parser.add_argument('--max-concurrency', type=int, default=50, help='最大并发数')
+    parser.add_argument('--max-concurrency', type=int, default=300, help='最大并发数')
     parser.add_argument('--output', type=str, default='subscribe/proxies.json', help='输出文件')
     parser.add_argument('--log-level', type=str, default='INFO',
                        choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'],

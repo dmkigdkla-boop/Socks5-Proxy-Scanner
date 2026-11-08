@@ -12,7 +12,7 @@ class Config:
     
     # 基础配置
     timeout: int = 10
-    max_concurrency: int = 150  # 提升到 150（适应 GitHub Actions 环境并提高性能）
+    max_concurrency: int = 300  # GitHub Actions 上的高吞吐默认值
     output_file: str = "subscribe/proxies.json"  # 输出到 subscribe 目录
     
     # 代理源配置

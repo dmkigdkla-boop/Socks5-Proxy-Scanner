@@ -2,9 +2,14 @@ name: Auto Update Proxy Pool
 
 on:
   schedule:
-    # Run every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
-    - cron: '0 */6 * * *'
+    # Run every 15 minutes.
+    - cron: '*/15 * * * *'
   workflow_dispatch:  # Allow manual trigger
+
+# Only one run may update the shared SQLite database, subscriptions and KV at a time.
+concurrency:
+  group: proxy-pool-update
+  cancel-in-progress: false
 
 # Required permissions for public repositories
 permissions:
@@ -38,7 +43,7 @@ jobs:
         env:
           DATABASE_PATH: proxies.db
           SCAN_TIMEOUT: 10
-          MAX_CONCURRENCY: 150
+          MAX_CONCURRENCY: 300
         run: |
           mkdir -p subscribe
           chmod 755 subscribe
@@ -46,7 +51,7 @@ jobs:
           echo "Starting proxy scan..."
           python proxy_scanner_enhanced.py \
             --timeout 10 \
-            --max-concurrency 150 \
+            --max-concurrency 300 \
             --output subscribe/proxies.json \
             --enable-blacklist \
             --auto-blacklist \
