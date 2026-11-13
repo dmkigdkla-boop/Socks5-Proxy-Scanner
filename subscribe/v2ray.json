@@ -55,7 +55,7 @@
       "settings": {
         "servers": [
           {
-            "address": "199.66.183.226",
+            "address": "216.105.130.131",
             "port": 4145
           }
         ]
@@ -91,7 +91,7 @@
       "settings": {
         "servers": [
           {
-            "address": "216.105.130.131",
+            "address": "216.105.128.144",
             "port": 4145
           }
         ]
@@ -103,7 +103,7 @@
       "settings": {
         "servers": [
           {
-            "address": "216.105.128.144",
+            "address": "199.66.182.243",
             "port": 4145
           }
         ]
@@ -115,18 +115,6 @@
       "settings": {
         "servers": [
           {
-            "address": "69.61.200.104",
-            "port": 36181
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_009",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
             "address": "199.66.182.232",
             "port": 4145
           }
@@ -134,7 +122,7 @@
       }
     },
     {
-      "tag": "United States_010",
+      "tag": "United States_009",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -146,12 +134,24 @@
       }
     },
     {
+      "tag": "United States_010",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "66.42.224.229",
+            "port": 41679
+          }
+        ]
+      }
+    },
+    {
       "tag": "United States_011",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "199.66.182.243",
+            "address": "216.68.128.121",
             "port": 4145
           }
         ]
@@ -163,14 +163,26 @@
       "settings": {
         "servers": [
           {
-            "address": "198.199.86.11",
-            "port": 1080
+            "address": "199.66.183.226",
+            "port": 4145
           }
         ]
       }
     },
     {
       "tag": "United States_013",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "69.61.200.104",
+            "port": 36181
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_014",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -182,36 +194,24 @@
       }
     },
     {
-      "tag": "United States_014",
+      "tag": "United States_015",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "184.185.2.12",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Canada_015",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "159.203.61.169",
+            "address": "198.199.86.11",
             "port": 1080
           }
         ]
       }
     },
     {
-      "tag": "United Kingdom_016",
+      "tag": "Canada_016",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "134.209.29.120",
+            "address": "159.203.61.169",
             "port": 1080
           }
         ]
@@ -230,31 +230,55 @@
       }
     },
     {
-      "tag": "South Korea_018",
+      "tag": "United States_018",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "43.128.144.133",
-            "port": 18080
+            "address": "208.102.51.6",
+            "port": 58208
           }
         ]
       }
     },
     {
-      "tag": "United States_019",
+      "tag": "United Kingdom_019",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "184.182.240.211",
-            "port": 4145
+            "address": "134.209.29.120",
+            "port": 1080
           }
         ]
       }
     },
     {
-      "tag": "United States_020",
+      "tag": "South Korea_020",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "183.106.215.208",
+            "port": 1080
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Germany_021",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "89.58.57.45",
+            "port": 80
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_022",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -266,31 +290,19 @@
       }
     },
     {
-      "tag": "United States_021",
+      "tag": "United States_023",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "66.42.224.229",
-            "port": 41679
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_022",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "184.181.217.213",
+            "address": "142.54.236.97",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Ecuador_023",
+      "tag": "Ecuador_024",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -302,24 +314,12 @@
       }
     },
     {
-      "tag": "United States_024",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "67.201.33.10",
-            "port": 25283
-          }
-        ]
-      }
-    },
-    {
       "tag": "United States_025",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "98.170.57.231",
+            "address": "98.170.57.249",
             "port": 4145
           }
         ]
@@ -331,8 +331,8 @@
       "settings": {
         "servers": [
           {
-            "address": "184.181.217.194",
-            "port": 4145
+            "address": "184.178.172.13",
+            "port": 15311
           }
         ]
       }
@@ -343,7 +343,7 @@
       "settings": {
         "servers": [
           {
-            "address": "184.181.217.220",
+            "address": "142.54.231.38",
             "port": 4145
           }
         ]
@@ -355,20 +355,20 @@
       "settings": {
         "servers": [
           {
-            "address": "174.64.199.79",
-            "port": 4145
+            "address": "45.61.188.134",
+            "port": 44499
           }
         ]
       }
     },
     {
-      "tag": "United States_029",
+      "tag": "Japan_029",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "45.61.188.134",
-            "port": 44499
+            "address": "101.36.104.46",
+            "port": 10808
           }
         ]
       }
@@ -386,31 +386,7 @@
       }
     },
     {
-      "tag": "Japan_031",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "101.36.104.46",
-            "port": 10808
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Germany_032",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "47.245.165.201",
-            "port": 1080
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_033",
+      "tag": "United States_031",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -422,355 +398,7 @@
       }
     },
     {
-      "tag": "United States_034",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "184.181.217.201",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_035",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "74.119.147.209",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_036",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "68.71.242.118",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_037",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "174.77.111.197",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Germany_038",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "89.58.57.45",
-            "port": 80
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_039",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "216.68.128.121",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_040",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "68.71.251.134",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_041",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.252.209.155",
-            "port": 14455
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_042",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "98.178.72.30",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_043",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.207.109.5",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_044",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "98.175.31.222",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Germany_045",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "91.107.179.68",
-            "port": 10809
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_046",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "184.170.251.30",
-            "port": 11288
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_047",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.252.208.70",
-            "port": 14282
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_048",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "174.77.111.196",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "India_049",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "139.59.1.14",
-            "port": 1080
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Azerbaijan_050",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "85.132.108.42",
-            "port": 3128
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_051",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.195.34.58",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_052",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.195.34.59",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_053",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "98.188.47.132",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_054",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "142.54.236.97",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_055",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.111.139.162",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_056",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "198.8.94.174",
-            "port": 39078
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_057",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "68.1.210.189",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_058",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "70.166.167.38",
-            "port": 57728
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_059",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "67.201.39.14",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_060",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "142.54.237.38",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_061",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.37.135.145",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_062",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.111.135.18",
-            "port": 18301
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_063",
+      "tag": "Unknown_032",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -782,235 +410,31 @@
       }
     },
     {
-      "tag": "Unknown_064",
+      "tag": "Unknown_033",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "184.178.172.28",
-            "port": 15294
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_065",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "24.249.199.12",
+            "address": "74.119.147.209",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "United States_066",
+      "tag": "United States_034",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "72.194.42.131",
+            "address": "174.77.111.197",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "United States_067",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.207.113.97",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_068",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.150.166.149",
-            "port": 8888
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_069",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.235.147.5",
-            "port": 3128
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United Kingdom_070",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "47.237.113.119",
-            "port": 8123
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United Kingdom_071",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "8.213.195.191",
-            "port": 31433
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_072",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "67.201.35.145",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_073",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "142.54.229.249",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_074",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "68.71.245.206",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_075",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "142.54.231.38",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_076",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "184.170.245.148",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_077",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "183.106.215.208",
-            "port": 1080
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_078",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "184.181.217.210",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_079",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "39.106.165.196",
-            "port": 1080
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_080",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "68.71.241.33",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_081",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.252.211.197",
-            "port": 14921
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_082",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.111.139.165",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_083",
+      "tag": "United States_035",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1022,19 +446,19 @@
       }
     },
     {
-      "tag": "Unknown_084",
+      "tag": "United States_036",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "72.195.114.169",
+            "address": "184.178.172.23",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_085",
+      "tag": "United States_037",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1046,25 +470,601 @@
       }
     },
     {
-      "tag": "Unknown_086",
+      "tag": "United States_038",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "72.195.34.41",
+            "address": "184.182.240.211",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_087",
+      "tag": "Unknown_039",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "184.181.178.33",
+            "address": "47.245.165.201",
+            "port": 1080
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_040",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "212.77.75.25",
+            "port": 1088
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_041",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.205.0.93",
             "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_042",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "184.181.217.213",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_043",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.252.215.5",
+            "port": 16137
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_044",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "184.170.251.30",
+            "port": 11288
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_045",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "98.181.137.80",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Ukraine_046",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "176.101.220.90",
+            "port": 8090
+          }
+        ]
+      }
+    },
+    {
+      "tag": "India_047",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "139.59.1.14",
+            "port": 1080
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_048",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "68.71.247.130",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_049",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "199.58.185.9",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_050",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.195.101.99",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_051",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "184.185.2.12",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_052",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.206.74.126",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_053",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "184.181.217.201",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_054",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "68.71.249.158",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_055",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "142.54.237.38",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_056",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.194.42.131",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_057",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.214.108.67",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_058",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "98.170.57.231",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_059",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "184.181.217.194",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_060",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "184.178.172.28",
+            "port": 15294
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_061",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "68.71.245.206",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_062",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.37.217.3",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_063",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "68.71.240.210",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Germany_064",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "202.61.239.148",
+            "port": 8383
+          }
+        ]
+      }
+    },
+    {
+      "tag": "France_065",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.68.102.5",
+            "port": 3128
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_066",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.235.147.5",
+            "port": 3128
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United Kingdom_067",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.213.195.191",
+            "port": 31433
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_068",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "184.178.172.25",
+            "port": 15291
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_069",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "70.166.65.160",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "China_070",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "39.106.165.196",
+            "port": 1080
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Germany_071",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "91.107.179.68",
+            "port": 10809
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_072",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "142.54.226.214",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_073",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "68.71.242.118",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_074",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.252.220.92",
+            "port": 17328
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_075",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "68.71.254.6",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_076",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "68.71.243.14",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_077",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.111.139.165",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_078",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.252.211.197",
+            "port": 14921
+          }
+        ]
+      }
+    },
+    {
+      "tag": "The Netherlands_079",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "5.255.113.177",
+            "port": 1080
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_080",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "68.71.249.153",
+            "port": 48606
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_081",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.37.216.68",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_082",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "67.201.58.190",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_083",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "142.54.237.34",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_084",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.252.209.155",
+            "port": 14455
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_085",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.111.135.17",
+            "port": 18302
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_086",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.252.211.193",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Switzerland_087",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "165.225.66.40",
+            "port": 11588
           }
         ]
       }
@@ -1075,8 +1075,8 @@
       "settings": {
         "servers": [
           {
-            "address": "184.178.172.18",
-            "port": 15280
+            "address": "174.77.111.196",
+            "port": 4145
           }
         ]
       }
@@ -1099,8 +1099,8 @@
       "settings": {
         "servers": [
           {
-            "address": "68.71.252.38",
-            "port": 4145
+            "address": "209.50.255.91",
+            "port": 1080
           }
         ]
       }
@@ -1111,7 +1111,7 @@
       "settings": {
         "servers": [
           {
-            "address": "142.54.237.34",
+            "address": "72.207.33.64",
             "port": 4145
           }
         ]
@@ -1123,7 +1123,7 @@
       "settings": {
         "servers": [
           {
-            "address": "142.54.228.193",
+            "address": "98.178.72.30",
             "port": 4145
           }
         ]
@@ -1135,110 +1135,14 @@
       "settings": {
         "servers": [
           {
-            "address": "72.37.216.68",
+            "address": "72.207.109.5",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_094",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "107.181.161.81",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_095",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.252.211.193",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_096",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.111.135.17",
-            "port": 18302
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_097",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.205.0.93",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_098",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.195.34.60",
-            "port": 27391
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_099",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.206.74.126",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_100",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "184.178.172.14",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Hong Kong_101",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "121.46.226.221",
-            "port": 10808
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Hong Kong_102",
+      "tag": "Hong Kong_094",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1250,43 +1154,19 @@
       }
     },
     {
-      "tag": "Unknown_103",
+      "tag": "Unknown_095",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "199.102.104.70",
+            "address": "142.54.232.6",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_104",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "67.201.59.70",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_105",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "199.187.210.54",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_106",
+      "tag": "Unknown_096",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1298,43 +1178,19 @@
       }
     },
     {
-      "tag": "Unknown_107",
+      "tag": "Unknown_097",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "192.252.214.17",
+            "address": "199.187.210.54",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_108",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.111.129.145",
-            "port": 16894
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_109",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.252.208.67",
-            "port": 14287
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_110",
+      "tag": "Unknown_098",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1346,19 +1202,55 @@
       }
     },
     {
-      "tag": "Unknown_111",
+      "tag": "Unknown_099",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "72.195.34.42",
+            "address": "192.111.129.145",
+            "port": 16894
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_100",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.252.209.158",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_112",
+      "tag": "Unknown_101",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.252.208.67",
+            "port": 14287
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_102",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.252.208.70",
+            "port": 14282
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_103",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1370,43 +1262,55 @@
       }
     },
     {
-      "tag": "Unknown_113",
+      "tag": "Unknown_104",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "184.178.172.13",
-            "port": 15311
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_114",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "98.170.57.249",
+            "address": "72.205.0.67",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_115",
+      "tag": "Unknown_105",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "198.8.84.3",
+            "address": "43.128.144.133",
+            "port": 18080
+          }
+        ]
+      }
+    },
+    {
+      "tag": "India_106",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.180.146.251",
+            "port": 10800
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_107",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "142.54.239.1",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_116",
+      "tag": "Unknown_108",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1418,55 +1322,19 @@
       }
     },
     {
-      "tag": "Unknown_117",
+      "tag": "Unknown_109",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "192.111.134.10",
+            "address": "192.111.139.162",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_118",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "199.116.112.6",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_119",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "198.8.94.170",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_120",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.111.137.37",
-            "port": 18762
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_121",
+      "tag": "Unknown_110",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1478,19 +1346,79 @@
       }
     },
     {
-      "tag": "United Kingdom_122",
+      "tag": "Unknown_111",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "8.211.42.167",
-            "port": 8000
+            "address": "74.119.144.60",
+            "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "United Kingdom_123",
+      "tag": "Unknown_112",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "198.8.94.174",
+            "port": 39078
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_113",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.111.138.29",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_114",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "199.116.112.6",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_115",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "198.8.94.170",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_116",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "174.64.199.79",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United Kingdom_117",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1502,7 +1430,31 @@
       }
     },
     {
-      "tag": "Unknown_124",
+      "tag": "United Kingdom_118",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "47.89.159.212",
+            "port": 9000
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United Kingdom_119",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.211.42.167",
+            "port": 8000
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_120",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1514,13 +1466,61 @@
       }
     },
     {
-      "tag": "Unknown_125",
+      "tag": "Unknown_121",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "199.102.105.242",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_122",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
             "address": "107.181.168.145",
             "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_123",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.252.210.233",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_124",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.111.135.18",
+            "port": 18301
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_125",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.111.130.5",
+            "port": 17002
           }
         ]
       }
@@ -1543,8 +1543,8 @@
       "settings": {
         "servers": [
           {
-            "address": "98.190.239.3",
-            "port": 4145
+            "address": "192.111.139.163",
+            "port": 19404
           }
         ]
       }
@@ -1555,62 +1555,26 @@
       "settings": {
         "servers": [
           {
-            "address": "98.191.0.37",
+            "address": "104.37.135.145",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Brazil_129",
+      "tag": "Unknown_129",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "45.226.130.66",
-            "port": 3128
+            "address": "199.102.106.94",
+            "port": 4145
           }
         ]
       }
     },
     {
       "tag": "Unknown_130",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "113.249.111.67",
-            "port": 1080
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_131",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.200.152.30",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_132",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "192.111.129.150",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_133",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1622,331 +1586,55 @@
       }
     },
     {
-      "tag": "United Kingdom_134",
+      "tag": "Unknown_131",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "57.128.249.250",
-            "port": 9052
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_135",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "184.178.172.26",
+            "address": "184.170.245.148",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_136",
+      "tag": "Unknown_132",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "98.188.47.150",
+            "address": "72.195.34.41",
             "port": 4145
           }
         ]
       }
     },
     {
-      "tag": "Unknown_137",
+      "tag": "Unknown_133",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "199.58.184.97",
-            "port": 4145
+            "address": "184.178.172.5",
+            "port": 15303
           }
         ]
       }
     },
     {
-      "tag": "Egypt_138",
+      "tag": "China_134",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "41.128.90.52",
-            "port": 1981
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Egypt_139",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "41.128.90.52",
-            "port": 1976
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_140",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "174.75.211.222",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_141",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "98.181.137.80",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "France_142",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "79.164.65.124",
-            "port": 10808
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United Kingdom_143",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "47.89.159.212",
-            "port": 9000
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United Kingdom_144",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "8.211.195.139",
-            "port": 8128
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United Kingdom_145",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "47.250.155.254",
-            "port": 8000
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_146",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "27.147.155.206",
-            "port": 12051
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_147",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.195.114.184",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Russia_148",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "80.249.131.218",
-            "port": 10800
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_149",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "217.52.247.84",
-            "port": 1981
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_150",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "110.39.151.50",
+            "address": "113.249.111.67",
             "port": 1080
           }
         ]
       }
     },
     {
-      "tag": "Egypt_151",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "217.52.247.84",
-            "port": 1976
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_152",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.194.42.156",
-            "port": 4145
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Hong Kong_153",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "203.82.253.47",
-            "port": 80
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_154",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "80.90.178.167",
-            "port": 1081
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United States_155",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "23.238.64.163",
-            "port": 10808
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Germany_156",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "202.61.239.148",
-            "port": 8383
-          }
-        ]
-      }
-    },
-    {
-      "tag": "France_157",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "51.68.102.5",
-            "port": 3128
-          }
-        ]
-      }
-    },
-    {
-      "tag": "United Kingdom_158",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "8.221.141.88",
-            "port": 6379
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_159",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "116.101.73.52",
-            "port": 1082
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_160",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "2.192.30.93",
-            "port": 8080
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_161",
+      "tag": "Hong Kong_135",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -1958,55 +1646,19 @@
       }
     },
     {
-      "tag": "Unknown_162",
+      "tag": "India_136",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "167.99.3.26",
-            "port": 7742
+            "address": "103.231.78.36",
+            "port": 80
           }
         ]
       }
     },
     {
-      "tag": "Unknown_163",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "157.20.220.51",
-            "port": 8080
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_164",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "46.174.121.3",
-            "port": 8090
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Unknown_165",
-      "protocol": "socks",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.74.31.47",
-            "port": 13930
-          }
-        ]
-      }
-    },
-    {
-      "tag": "Mexico_166",
+      "tag": "Mexico_137",
       "protocol": "socks",
       "settings": {
         "servers": [
@@ -2018,13 +1670,373 @@
       }
     },
     {
+      "tag": "Brazil_138",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.226.130.66",
+            "port": 3128
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_139",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "47.237.113.119",
+            "port": 8123
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_140",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "107.152.98.5",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_141",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "199.58.184.97",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_142",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.111.130.2",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_143",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "98.175.31.222",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_144",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.195.34.60",
+            "port": 27391
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_145",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "98.188.47.150",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_146",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "121.46.226.221",
+            "port": 10808
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_147",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "184.178.172.17",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_148",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "174.75.211.222",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_149",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "98.188.47.132",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_150",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "68.1.210.189",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_151",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "24.249.199.12",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_152",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.195.114.184",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_153",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.207.113.97",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Hong Kong_154",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.155.226.177",
+            "port": 3128
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_155",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "41.128.90.52",
+            "port": 1981
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_156",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.194.42.156",
+            "port": 4145
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_157",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "47.250.155.254",
+            "port": 8000
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_158",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "80.90.178.167",
+            "port": 1081
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United States_159",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "193.233.220.20",
+            "port": 80
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United Kingdom_160",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "47.251.87.74",
+            "port": 60000
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United Kingdom_161",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.211.51.115",
+            "port": 9999
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United Kingdom_162",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.138.125.130",
+            "port": 80
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United Kingdom_163",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.220.136.174",
+            "port": 992
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_164",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "167.99.3.26",
+            "port": 8222
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_165",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "175.136.209.251",
+            "port": 8080
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_166",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.221.139.222",
+            "port": 9992
+          }
+        ]
+      }
+    },
+    {
       "tag": "Unknown_167",
       "protocol": "socks",
       "settings": {
         "servers": [
           {
-            "address": "154.88.136.189",
-            "port": 999
+            "address": "8.211.195.139",
+            "port": 8123
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Unknown_168",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "103.86.117.23",
+            "port": 8080
           }
         ]
       }
