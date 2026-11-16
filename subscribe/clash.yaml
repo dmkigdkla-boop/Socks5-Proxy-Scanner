@@ -5,2045 +5,1865 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: United States_001_S95_EF
+- name: Singapore_001_S95_EF
   type: socks5
-  server: 138.68.60.8
-  port: 1080
+  server: 188.166.178.163
+  port: 3129
   udp: true
-- name: United States_002_S95_EF
-  type: socks5
-  server: 199.66.183.226
-  port: 4145
-  udp: true
-- name: United States_003_S95_EF
-  type: socks5
-  server: 199.66.182.232
-  port: 4145
-  udp: true
-- name: United States_004_S95_EF
-  type: socks5
-  server: 66.42.224.229
-  port: 41679
-  udp: true
-- name: United States_005_S95_EF
-  type: socks5
-  server: 184.182.240.12
-  port: 4145
-  udp: true
-- name: United States_006_S95_EF
-  type: socks5
-  server: 216.68.128.121
-  port: 4145
-  udp: true
-- name: United States_007_S95_EF
-  type: socks5
-  server: 199.66.182.243
-  port: 4145
-  udp: true
-- name: United States_008_S95_EF
-  type: socks5
-  server: 216.105.130.131
-  port: 4145
-  udp: true
-- name: United States_009_S95_EF
-  type: socks5
-  server: 199.66.183.251
-  port: 4145
-  udp: true
-- name: United States_010_S95_EF
-  type: socks5
-  server: 216.105.143.146
-  port: 4145
-  udp: true
-- name: Germany_011_S95_EF
-  type: socks5
-  server: 89.58.57.45
-  port: 80
-  udp: true
-- name: Germany_012_S94_EF
-  type: socks5
-  server: 161.35.70.249
-  port: 1080
-  udp: true
-- name: United States_013_S94_EF
-  type: socks5
-  server: 209.97.150.167
-  port: 1080
-  udp: true
-- name: United States_014_S94_EF
-  type: socks5
-  server: 208.102.51.6
-  port: 58208
-  udp: true
-- name: United States_015_S94_EF
-  type: socks5
-  server: 198.199.86.11
-  port: 1080
-  udp: true
-- name: United States_016_S94_EF
-  type: socks5
-  server: 72.49.49.11
-  port: 31034
-  udp: true
-- name: United States_017_S94_EF
-  type: socks5
-  server: 184.182.240.211
-  port: 4145
-  udp: true
-- name: United States_018_S93_EF
-  type: socks5
-  server: 184.185.2.12
-  port: 4145
-  udp: true
-- name: United States_019_S92_EF
-  type: socks5
-  server: 72.206.74.126
-  port: 4145
-  udp: true
-- name: United States_020_S92_EF
-  type: socks5
-  server: 174.77.111.196
-  port: 4145
-  udp: true
-- name: United States_021_S91_EF
-  type: socks5
-  server: 184.181.217.213
-  port: 4145
-  udp: true
-- name: United States_022_S90_EF
-  type: socks5
-  server: 184.178.172.28
-  port: 15294
-  udp: true
-- name: United States_023_S90_EF
-  type: socks5
-  server: 174.64.199.79
-  port: 4145
-  udp: true
-- name: Singapore_024_S90_EM
+- name: Singapore_002_S95_EF
   type: socks5
   server: 128.199.202.122
   port: 1080
   udp: true
-- name: United States_025_S90_EF
+- name: Germany_003_S95_EF
   type: socks5
-  server: 116.203.139.209
-  port: 5153
+  server: 89.58.57.45
+  port: 80
   udp: true
-- name: Japan_026_S89_EF
+- name: United States_004_S95_EF
   type: socks5
-  server: 101.36.104.46
-  port: 10808
-  udp: true
-- name: United States_027_S89_EF
-  type: socks5
-  server: 45.61.188.134
-  port: 44499
-  udp: true
-- name: United States_028_S89_EF
-  type: socks5
-  server: 174.77.111.197
+  server: 184.182.240.12
   port: 4145
   udp: true
-- name: United States_029_S89_EF
+- name: United States_005_S95_EF
   type: socks5
-  server: 184.181.217.201
-  port: 4145
+  server: 138.68.60.8
+  port: 1080
   udp: true
-- name: United States_030_S89_EF
+- name: Japan_006_S94_EF
   type: socks5
-  server: 184.178.172.23
-  port: 4145
+  server: 139.162.78.109
+  port: 1080
   udp: true
-- name: United States_031_S89_EF
-  type: socks5
-  server: 184.178.172.3
-  port: 4145
-  udp: true
-- name: South Korea_032_S89_EM
+- name: South Korea_007_S94_EF
   type: socks5
   server: 183.106.215.208
   port: 1080
   udp: true
-- name: Japan_033_S89_EF
+- name: United States_008_S94_EF
+  type: socks5
+  server: 209.97.150.167
+  port: 1080
+  udp: true
+- name: Germany_009_S94_EF
+  type: socks5
+  server: 161.35.70.249
+  port: 1080
+  udp: true
+- name: United States_010_S94_EF
+  type: socks5
+  server: 184.182.240.211
+  port: 4145
+  udp: true
+- name: United States_011_S94_EF
+  type: socks5
+  server: 198.199.86.11
+  port: 1080
+  udp: true
+- name: United States_012_S93_EF
+  type: socks5
+  server: 184.185.2.12
+  port: 4145
+  udp: true
+- name: United Kingdom_013_S92_EF
+  type: socks5
+  server: 134.209.29.120
+  port: 1080
+  udp: true
+- name: United States_014_S91_EF
+  type: socks5
+  server: 184.170.251.30
+  port: 11288
+  udp: true
+- name: United States_015_S90_EF
+  type: socks5
+  server: 116.203.139.209
+  port: 5153
+  udp: true
+- name: Japan_016_S89_EF
   type: socks5
   server: 101.36.104.239
   port: 10808
   udp: true
-- name: United States_034_S89_EF
-  type: socks5
-  server: 184.178.172.11
-  port: 4145
-  udp: true
-- name: United States_035_S88_EF
-  type: socks5
-  server: 72.207.33.64
-  port: 4145
-  udp: true
-- name: United States_036_S88_EF
-  type: socks5
-  server: 98.178.72.21
-  port: 10919
-  udp: true
-- name: United States_037_S88_EF
-  type: socks5
-  server: 98.175.31.222
-  port: 4145
-  udp: true
-- name: United States_038_S88_EF
-  type: socks5
-  server: 184.178.172.25
-  port: 15291
-  udp: true
-- name: Ukraine_039_S88_EF
-  type: socks5
-  server: 176.101.220.90
-  port: 8090
-  udp: true
-- name: United States_040_S87_EF
-  type: socks5
-  server: 72.37.217.3
-  port: 4145
-  udp: true
-- name: United States_041_S87_EF
-  type: socks5
-  server: 67.201.33.10
-  port: 25283
-  udp: true
-- name: United States_042_S87_EF
-  type: socks5
-  server: 72.207.109.5
-  port: 4145
-  udp: true
-- name: United States_043_S87_EF
-  type: socks5
-  server: 72.205.0.67
-  port: 4145
-  udp: true
-- name: United States_044_S87_EF
-  type: socks5
-  server: 72.195.114.184
-  port: 4145
-  udp: true
-- name: United States_045_S87_EF
-  type: socks5
-  server: 68.1.210.189
-  port: 4145
-  udp: true
-- name: United States_046_S87_EF
-  type: socks5
-  server: 70.166.167.55
-  port: 57745
-  udp: true
-- name: United States_047_S87_EF
-  type: socks5
-  server: 116.203.139.209
-  port: 3128
-  udp: true
-- name: United States_048_S86_EF
-  type: socks5
-  server: 68.71.243.14
-  port: 4145
-  udp: true
-- name: United States_049_S86_EF
-  type: socks5
-  server: 67.201.35.145
-  port: 4145
-  udp: true
-- name: United States_050_S86_EF
-  type: socks5
-  server: 72.194.42.131
-  port: 4145
-  udp: true
-- name: United States_051_S86_EF
-  type: socks5
-  server: 174.75.211.222
-  port: 4145
-  udp: true
-- name: United States_052_S86_EF
-  type: socks5
-  server: 107.181.161.81
-  port: 4145
-  udp: true
-- name: United States_053_S86_EF
-  type: socks5
-  server: 192.252.216.81
-  port: 4145
-  udp: true
-- name: United States_054_S86_EF
-  type: socks5
-  server: 72.205.0.93
-  port: 4145
-  udp: true
-- name: United States_055_S86_EF
-  type: socks5
-  server: 67.201.39.14
-  port: 4145
-  udp: true
-- name: United States_056_S86_EF
-  type: socks5
-  server: 98.170.57.241
-  port: 4145
-  udp: true
-- name: United States_057_S86_EF
-  type: socks5
-  server: 98.175.31.195
-  port: 4145
-  udp: true
-- name: United States_058_S86_EF
-  type: socks5
-  server: 174.75.211.193
-  port: 4145
-  udp: true
-- name: United States_059_S86_EF
-  type: socks5
-  server: 184.178.172.17
-  port: 4145
-  udp: true
-- name: United States_060_S86_EF
-  type: socks5
-  server: 184.178.172.26
-  port: 4145
-  udp: true
-- name: Singapore_061_S86_EM
-  type: socks5
-  server: 188.166.178.163
-  port: 1088
-  udp: true
-- name: United States_062_S86_EM
-  type: socks5
-  server: 184.178.172.14
-  port: 4145
-  udp: true
-- name: Germany_063_S86_EF
-  type: socks5
-  server: 91.107.179.68
-  port: 10809
-  udp: true
-- name: United States_064_S86_EF
-  type: socks5
-  server: 184.181.217.210
-  port: 4145
-  udp: true
-- name: United States_065_S86_EF
-  type: socks5
-  server: 98.191.0.37
-  port: 4145
-  udp: true
-- name: United States_066_S85_EF
-  type: socks5
-  server: 199.102.104.70
-  port: 4145
-  udp: true
-- name: United States_067_S85_EF
-  type: socks5
-  server: 68.71.242.118
-  port: 4145
-  udp: true
-- name: United States_068_S85_EF
-  type: socks5
-  server: 68.1.210.163
-  port: 4145
-  udp: true
-- name: United States_069_S85_EF
-  type: socks5
-  server: 98.190.239.3
-  port: 4145
-  udp: true
-- name: United States_070_S85_EF
-  type: socks5
-  server: 98.178.72.30
-  port: 4145
-  udp: true
-- name: Singapore_071_S85_EM
-  type: socks5
-  server: 188.166.178.163
-  port: 3129
-  udp: true
-- name: United States_072_S84_EM
-  type: socks5
-  server: 184.181.217.194
-  port: 4145
-  udp: true
-- name: United States_073_S84_EF
-  type: socks5
-  server: 142.54.232.6
-  port: 4145
-  udp: true
-- name: United States_074_S84_EF
-  type: socks5
-  server: 198.8.94.170
-  port: 4145
-  udp: true
-- name: United States_075_S84_EF
-  type: socks5
-  server: 192.111.135.17
-  port: 18302
-  udp: true
-- name: United States_076_S84_EF
-  type: socks5
-  server: 142.54.226.214
-  port: 4145
-  udp: true
-- name: United States_077_S84_EF
-  type: socks5
-  server: 192.252.211.197
-  port: 14921
-  udp: true
-- name: United States_078_S84_EF
-  type: socks5
-  server: 192.252.214.17
-  port: 4145
-  udp: true
-- name: Unknown_079_S84_UF
-  type: socks5
-  server: 74.119.147.209
-  port: 4145
-  udp: true
-- name: United States_080_S84_EM
-  type: socks5
-  server: 184.178.172.13
-  port: 15311
-  udp: true
-- name: United States_081_S84_EM
-  type: socks5
-  server: 184.181.217.206
-  port: 4145
-  udp: true
-- name: United States_082_S83_EF
-  type: socks5
-  server: 68.71.241.33
-  port: 4145
-  udp: true
-- name: United States_083_S83_EF
-  type: socks5
-  server: 192.252.209.155
-  port: 14455
-  udp: true
-- name: United States_084_S83_EF
-  type: socks5
-  server: 192.252.215.2
-  port: 4145
-  udp: true
-- name: United States_085_S83_EF
-  type: socks5
-  server: 199.116.112.6
-  port: 4145
-  udp: true
-- name: United States_086_S83_EF
-  type: socks5
-  server: 199.102.107.145
-  port: 4145
-  udp: true
-- name: Unknown_087_S83_UF
-  type: socks5
-  server: 98.170.57.249
-  port: 4145
-  udp: true
-- name: United States_088_S83_EM
-  type: socks5
-  server: 184.178.172.5
-  port: 15303
-  udp: true
-- name: United States_089_S83_EF
-  type: socks5
-  server: 72.194.42.156
-  port: 4145
-  udp: true
-- name: India_090_S83_EF
-  type: socks5
-  server: 103.231.78.36
-  port: 80
-  udp: true
-- name: United States_091_S82_EF
-  type: socks5
-  server: 69.55.49.177
-  port: 38182
-  udp: true
-- name: United States_092_S82_EF
-  type: socks5
-  server: 198.8.84.3
-  port: 4145
-  udp: true
-- name: Unknown_093_S82_UF
+- name: United States_017_S89_EF
   type: socks5
   server: 68.71.251.134
   port: 4145
   udp: true
-- name: Unknown_094_S82_UF
-  type: socks5
-  server: 142.54.236.97
-  port: 4145
-  udp: true
-- name: United States_095_S81_EM
-  type: socks5
-  server: 184.181.217.220
-  port: 4145
-  udp: true
-- name: United States_096_S81_EM
-  type: socks5
-  server: 98.188.47.150
-  port: 4145
-  udp: true
-- name: United States_097_S81_EF
-  type: socks5
-  server: 199.58.184.97
-  port: 4145
-  udp: true
-- name: United States_098_S81_EF
-  type: socks5
-  server: 192.111.137.37
-  port: 18762
-  udp: true
-- name: Unknown_099_S81_UF
+- name: United States_018_S88_EF
   type: socks5
   server: 199.58.185.9
   port: 4145
   udp: true
-- name: Unknown_100_S81_UF
+- name: Ukraine_019_S88_EF
   type: socks5
-  server: 68.71.249.153
-  port: 48606
-  udp: true
-- name: United States_101_S80_EF
-  type: socks5
-  server: 104.200.152.30
-  port: 4145
-  udp: true
-- name: United States_102_S80_EM
-  type: socks5
-  server: 98.170.57.231
-  port: 4145
-  udp: true
-- name: United States_103_S80_EM
-  type: socks5
-  server: 72.195.34.59
-  port: 4145
-  udp: true
-- name: United States_104_S80_EM
-  type: socks5
-  server: 72.195.34.58
-  port: 4145
-  udp: true
-- name: United States_105_S80_EM
-  type: socks5
-  server: 72.195.114.169
-  port: 4145
-  udp: true
-- name: United States_106_S80_EF
-  type: socks5
-  server: 31.44.5.192
-  port: 1081
-  udp: true
-- name: Taiwan_107_S80_EF
-  type: socks5
-  server: 182.155.254.159
-  port: 80
-  udp: true
-- name: Taiwan_108_S80_EF
-  type: socks5
-  server: 122.116.125.115
-  port: 8888
-  udp: true
-- name: Singapore_109_S80_EF
-  type: socks5
-  server: 129.226.93.232
-  port: 80
-  udp: true
-- name: Japan_110_S80_EF
-  type: socks5
-  server: 139.162.78.109
-  port: 8080
-  udp: true
-- name: Japan_111_S80_EF
-  type: socks5
-  server: 97.74.87.226
-  port: 80
-  udp: true
-- name: South Korea_112_S80_EF
-  type: socks5
-  server: 119.194.72.67
-  port: 80
-  udp: true
-- name: South Korea_113_S80_EF
-  type: socks5
-  server: 183.110.216.128
+  server: 176.101.220.90
   port: 8090
   udp: true
-- name: South Korea_114_S80_EF
+- name: United States_020_S87_EF
   type: socks5
-  server: 43.155.215.149
-  port: 20000
-  udp: true
-- name: South Korea_115_S80_EF
-  type: socks5
-  server: 175.210.254.155
-  port: 80
-  udp: true
-- name: United States_116_S80_EF
-  type: socks5
-  server: 137.66.1.45
-  port: 80
-  udp: true
-- name: Germany_117_S80_EF
-  type: socks5
-  server: 46.232.249.209
-  port: 40001
-  udp: true
-- name: France_118_S80_EF
-  type: socks5
-  server: 202.133.88.173
-  port: 80
-  udp: true
-- name: United States_119_S80_EF
-  type: socks5
-  server: 34.122.187.196
-  port: 80
-  udp: true
-- name: Canada_120_S80_EF
-  type: socks5
-  server: 159.203.61.169
-  port: 3128
-  udp: true
-- name: United Kingdom_121_S80_EF
-  type: socks5
-  server: 134.209.29.120
-  port: 3128
-  udp: true
-- name: United Kingdom_122_S80_EM
-  type: socks5
-  server: 8.211.42.167
-  port: 8000
-  udp: true
-- name: United States_123_S80_EF
-  type: socks5
-  server: 170.239.84.103
-  port: 3128
-  udp: true
-- name: United States_124_S80_EF
-  type: socks5
-  server: 142.93.202.130
-  port: 3128
-  udp: true
-- name: Germany_125_S80_EF
-  type: socks5
-  server: 91.107.248.7
-  port: 80
-  udp: true
-- name: United States_126_S80_EF
-  type: socks5
-  server: 198.111.166.184
-  port: 80
-  udp: true
-- name: Germany_127_S80_EF
-  type: socks5
-  server: 103.237.102.191
-  port: 11111
-  udp: true
-- name: United States_128_S80_EF
-  type: socks5
-  server: 45.130.127.10
-  port: 80
-  udp: true
-- name: United States_129_S80_EF
-  type: socks5
-  server: 12.50.107.220
-  port: 80
-  udp: true
-- name: United States_130_S80_EF
-  type: socks5
-  server: 174.138.119.88
-  port: 80
-  udp: true
-- name: United States_131_S80_EF
-  type: socks5
-  server: 159.65.230.46
-  port: 8888
-  udp: true
-- name: United States_132_S80_EF
-  type: socks5
-  server: 98.181.137.83
+  server: 72.37.217.3
   port: 4145
   udp: true
-- name: United States_133_S80_EF
+- name: United States_021_S87_EF
   type: socks5
-  server: 34.43.46.91
-  port: 443
+  server: 67.201.33.10
+  port: 25283
   udp: true
-- name: United States_134_S80_EF
+- name: United States_022_S87_EF
   type: socks5
-  server: 34.43.46.91
-  port: 80
+  server: 72.195.34.60
+  port: 27391
   udp: true
-- name: Germany_135_S80_EF
+- name: United States_023_S87_EF
   type: socks5
-  server: 80.74.54.148
+  server: 116.203.139.209
   port: 3128
   udp: true
-- name: France_136_S80_EF
+- name: United States_024_S87_EM
   type: socks5
-  server: 46.35.9.110
-  port: 80
-  udp: true
-- name: United States_137_S80_EF
-  type: socks5
-  server: 45.91.248.107
-  port: 80
-  udp: true
-- name: France_138_S80_EF
-  type: socks5
-  server: 37.187.74.125
-  port: 80
-  udp: true
-- name: United States_139_S80_EF
-  type: socks5
-  server: 143.246.138.227
-  port: 80
-  udp: true
-- name: Unknown_140_S79_UF
-  type: socks5
-  server: 142.54.231.38
+  server: 72.206.74.126
   port: 4145
   udp: true
-- name: United States_141_S79_EM
+- name: United States_025_S86_EF
   type: socks5
-  server: 172.235.147.5
-  port: 3128
-  udp: true
-- name: Unknown_142_S79_UF
-  type: socks5
-  server: 142.54.239.1
+  server: 68.71.243.14
   port: 4145
   udp: true
-- name: United States_143_S78_EM
+- name: Germany_026_S86_EF
   type: socks5
-  server: 70.166.167.38
-  port: 57728
-  udp: true
-- name: United States_144_S78_EM
-  type: socks5
-  server: 72.195.101.99
-  port: 4145
-  udp: true
-- name: China_145_S78_EM
-  type: socks5
-  server: 39.106.165.196
+  server: 47.245.165.201
   port: 1080
   udp: true
-- name: Unknown_146_S78_UF
+- name: Singapore_027_S86_EM
   type: socks5
-  server: 98.188.47.132
+  server: 188.166.178.163
+  port: 1088
+  udp: true
+- name: United States_028_S86_EM
+  type: socks5
+  server: 184.181.217.213
   port: 4145
   udp: true
-- name: Unknown_147_S78_UF
+- name: United States_029_S86_EF
   type: socks5
-  server: 199.116.114.11
+  server: 199.102.104.70
   port: 4145
   udp: true
-- name: Unknown_148_S78_UF
-  type: socks5
-  server: 192.252.211.193
-  port: 4145
-  udp: true
-- name: Unknown_149_S78_UM
-  type: socks5
-  server: 149.129.255.179
-  port: 6588
-  udp: true
-- name: Unknown_150_S77_UF
-  type: socks5
-  server: 192.111.129.145
-  port: 16894
-  udp: true
-- name: China_151_S77_EM
-  type: socks5
-  server: 113.249.111.67
-  port: 1080
-  udp: true
-- name: India_152_S77_EM
-  type: socks5
-  server: 82.180.146.251
-  port: 10800
-  udp: true
-- name: Unknown_153_S76_UF
-  type: socks5
-  server: 199.187.210.54
-  port: 4145
-  udp: true
-- name: Unknown_154_S76_UF
-  type: socks5
-  server: 192.252.208.67
-  port: 14287
-  udp: true
-- name: Unknown_155_S76_UF
-  type: socks5
-  server: 192.111.138.29
-  port: 4145
-  udp: true
-- name: United States_156_S76_EF
-  type: socks5
-  server: 184.170.169.216
-  port: 8888
-  udp: true
-- name: Unknown_157_S76_UF
-  type: socks5
-  server: 199.102.105.242
-  port: 4145
-  udp: true
-- name: Unknown_158_S76_UF
-  type: socks5
-  server: 192.111.137.34
-  port: 18765
-  udp: true
-- name: Unknown_159_S76_UF
-  type: socks5
-  server: 184.170.245.148
-  port: 4145
-  udp: true
-- name: Hong Kong_160_S75_EM
-  type: socks5
-  server: 8.218.197.6
-  port: 8099
-  udp: true
-- name: Unknown_161_S75_UF
-  type: socks5
-  server: 72.37.216.68
-  port: 4145
-  udp: true
-- name: Unknown_162_S75_UF
-  type: socks5
-  server: 107.152.98.5
-  port: 4145
-  udp: true
-- name: Germany_163_S75_EM
+- name: Germany_030_S85_EF
   type: socks5
   server: 43.157.63.235
   port: 1080
   udp: true
-- name: France_164_S75_EM
+- name: United Kingdom_031_S85_EM
+  type: socks5
+  server: 149.129.255.179
+  port: 6588
+  udp: true
+- name: Japan_032_S84_EM
+  type: socks5
+  server: 101.36.104.46
+  port: 10808
+  udp: true
+- name: United States_033_S84_EM
+  type: socks5
+  server: 184.181.217.201
+  port: 4145
+  udp: true
+- name: United States_034_S84_EM
+  type: socks5
+  server: 184.178.172.3
+  port: 4145
+  udp: true
+- name: United States_035_S84_EM
+  type: socks5
+  server: 174.77.111.197
+  port: 4145
+  udp: true
+- name: United States_036_S84_EF
+  type: socks5
+  server: 206.220.175.2
+  port: 4145
+  udp: true
+- name: Unknown_037_S84_UF
+  type: socks5
+  server: 74.119.147.209
+  port: 4145
+  udp: true
+- name: United States_038_S84_EM
+  type: socks5
+  server: 184.178.172.11
+  port: 4145
+  udp: true
+- name: United States_039_S83_EF
+  type: socks5
+  server: 68.71.241.33
+  port: 4145
+  udp: true
+- name: United States_040_S83_EF
+  type: socks5
+  server: 199.102.106.94
+  port: 4145
+  udp: true
+- name: United States_041_S83_EF
+  type: socks5
+  server: 192.252.215.2
+  port: 4145
+  udp: true
+- name: United States_042_S83_EF
+  type: socks5
+  server: 192.252.208.70
+  port: 14282
+  udp: true
+- name: United States_043_S83_EF
+  type: socks5
+  server: 192.252.209.155
+  port: 14455
+  udp: true
+- name: United States_044_S83_EF
+  type: socks5
+  server: 184.170.248.5
+  port: 4145
+  udp: true
+- name: United States_045_S83_EM
+  type: socks5
+  server: 98.178.72.21
+  port: 10919
+  udp: true
+- name: United States_046_S83_EF
+  type: socks5
+  server: 107.152.98.5
+  port: 4145
+  udp: true
+- name: United States_047_S83_EF
+  type: socks5
+  server: 184.170.245.148
+  port: 4145
+  udp: true
+- name: United States_048_S83_EF
+  type: socks5
+  server: 192.111.137.34
+  port: 18765
+  udp: true
+- name: India_049_S83_EF
+  type: socks5
+  server: 103.231.78.36
+  port: 80
+  udp: true
+- name: United States_050_S82_EM
+  type: socks5
+  server: 72.205.0.67
+  port: 4145
+  udp: true
+- name: United States_051_S82_EM
+  type: socks5
+  server: 184.178.172.26
+  port: 4145
+  udp: true
+- name: United States_052_S82_EF
+  type: socks5
+  server: 142.54.228.193
+  port: 4145
+  udp: true
+- name: United States_053_S82_EF
+  type: socks5
+  server: 192.111.137.37
+  port: 18762
+  udp: true
+- name: United States_054_S81_EM
+  type: socks5
+  server: 98.175.31.195
+  port: 4145
+  udp: true
+- name: United States_055_S81_EM
+  type: socks5
+  server: 184.178.172.17
+  port: 4145
+  udp: true
+- name: United States_056_S81_EM
+  type: socks5
+  server: 98.170.57.241
+  port: 4145
+  udp: true
+- name: United States_057_S81_EF
+  type: socks5
+  server: 192.252.214.20
+  port: 15864
+  udp: true
+- name: United States_058_S81_EM
+  type: socks5
+  server: 184.178.172.14
+  port: 4145
+  udp: true
+- name: United States_059_S81_EM
+  type: socks5
+  server: 72.195.34.35
+  port: 27360
+  udp: true
+- name: United States_060_S81_EM
+  type: socks5
+  server: 98.191.0.37
+  port: 4145
+  udp: true
+- name: United States_061_S81_EM
+  type: socks5
+  server: 184.181.217.210
+  port: 4145
+  udp: true
+- name: Hong Kong_062_S81_EM
+  type: socks5
+  server: 8.218.197.6
+  port: 8099
+  udp: true
+- name: Unknown_063_S80_UF
+  type: socks5
+  server: 67.201.39.14
+  port: 4145
+  udp: true
+- name: United States_064_S80_EM
+  type: socks5
+  server: 72.195.114.169
+  port: 4145
+  udp: true
+- name: United States_065_S80_EM
+  type: socks5
+  server: 98.188.47.132
+  port: 4145
+  udp: true
+- name: Unknown_066_S80_UM
+  type: socks5
+  server: 174.77.111.196
+  port: 4145
+  udp: true
+- name: Taiwan_067_S80_EF
+  type: socks5
+  server: 122.116.125.115
+  port: 8888
+  udp: true
+- name: Taiwan_068_S80_EF
+  type: socks5
+  server: 182.155.254.159
+  port: 80
+  udp: true
+- name: Singapore_069_S80_EF
+  type: socks5
+  server: 129.226.93.232
+  port: 80
+  udp: true
+- name: Japan_070_S80_EF
+  type: socks5
+  server: 97.74.87.226
+  port: 80
+  udp: true
+- name: South Korea_071_S80_EF
+  type: socks5
+  server: 119.194.72.67
+  port: 80
+  udp: true
+- name: South Korea_072_S80_EF
+  type: socks5
+  server: 175.210.254.155
+  port: 80
+  udp: true
+- name: United States_073_S80_EF
+  type: socks5
+  server: 142.93.202.130
+  port: 3128
+  udp: true
+- name: United States_074_S80_EF
+  type: socks5
+  server: 174.138.119.88
+  port: 80
+  udp: true
+- name: France_075_S80_EF
+  type: socks5
+  server: 46.35.9.110
+  port: 80
+  udp: true
+- name: United States_076_S80_EF
+  type: socks5
+  server: 45.130.127.10
+  port: 80
+  udp: true
+- name: United States_077_S80_EF
+  type: socks5
+  server: 12.50.107.220
+  port: 80
+  udp: true
+- name: United States_078_S80_EF
+  type: socks5
+  server: 34.122.187.196
+  port: 80
+  udp: true
+- name: Canada_079_S80_EF
+  type: socks5
+  server: 159.203.61.169
+  port: 3128
+  udp: true
+- name: United States_080_S80_EF
+  type: socks5
+  server: 170.239.84.103
+  port: 3128
+  udp: true
+- name: France_081_S80_EF
   type: socks5
   server: 51.159.28.39
   port: 80
   udp: true
-- name: South Africa_165_S73_EF
+- name: Germany_082_S80_EF
+  type: socks5
+  server: 80.74.54.148
+  port: 3128
+  udp: true
+- name: Germany_083_S80_EF
+  type: socks5
+  server: 103.237.102.191
+  port: 11111
+  udp: true
+- name: Germany_084_S80_EF
+  type: socks5
+  server: 91.107.248.7
+  port: 80
+  udp: true
+- name: United States_085_S80_EF
+  type: socks5
+  server: 116.203.139.209
+  port: 5678
+  udp: true
+- name: United States_086_S80_EF
+  type: socks5
+  server: 143.246.138.227
+  port: 80
+  udp: true
+- name: United States_087_S80_EF
+  type: socks5
+  server: 159.65.230.46
+  port: 8888
+  udp: true
+- name: United States_088_S80_EF
+  type: socks5
+  server: 137.66.1.45
+  port: 80
+  udp: true
+- name: United States_089_S80_EF
+  type: socks5
+  server: 45.91.248.107
+  port: 80
+  udp: true
+- name: France_090_S80_EF
+  type: socks5
+  server: 202.133.88.173
+  port: 80
+  udp: true
+- name: Unknown_091_S79_UF
+  type: socks5
+  server: 142.54.237.38
+  port: 4145
+  udp: true
+- name: Unknown_092_S79_UF
+  type: socks5
+  server: 142.54.239.1
+  port: 4145
+  udp: true
+- name: Unknown_093_S79_UF
+  type: socks5
+  server: 162.253.68.97
+  port: 4145
+  udp: true
+- name: Unknown_094_S79_UF
+  type: socks5
+  server: 68.71.240.210
+  port: 4145
+  udp: true
+- name: China_095_S78_EM
+  type: socks5
+  server: 39.106.165.196
+  port: 1080
+  udp: true
+- name: Unknown_096_S78_UF
+  type: socks5
+  server: 199.116.114.11
+  port: 4145
+  udp: true
+- name: Unknown_097_S78_UF
+  type: socks5
+  server: 67.201.58.190
+  port: 4145
+  udp: true
+- name: Unknown_098_S78_UF
+  type: socks5
+  server: 192.252.211.193
+  port: 4145
+  udp: true
+- name: Unknown_099_S78_UF
+  type: socks5
+  server: 192.111.135.17
+  port: 18302
+  udp: true
+- name: United States_100_S78_EM
+  type: socks5
+  server: 70.166.65.160
+  port: 4145
+  udp: true
+- name: China_101_S77_EM
+  type: socks5
+  server: 113.249.111.67
+  port: 1080
+  udp: true
+- name: Unknown_102_S77_UF
+  type: socks5
+  server: 142.54.226.214
+  port: 4145
+  udp: true
+- name: Unknown_103_S77_UF
+  type: socks5
+  server: 68.71.245.206
+  port: 4145
+  udp: true
+- name: Unknown_104_S77_UF
+  type: socks5
+  server: 192.252.211.197
+  port: 14921
+  udp: true
+- name: Unknown_105_S77_UF
+  type: socks5
+  server: 198.8.94.170
+  port: 4145
+  udp: true
+- name: Unknown_106_S77_UF
+  type: socks5
+  server: 192.111.135.18
+  port: 18301
+  udp: true
+- name: United States_107_S77_EM
+  type: socks5
+  server: 72.207.109.5
+  port: 4145
+  udp: true
+- name: United States_108_S77_EM
+  type: socks5
+  server: 69.55.49.177
+  port: 38182
+  udp: true
+- name: Switzerland_109_S77_EF
+  type: socks5
+  server: 91.199.137.149
+  port: 2000
+  udp: true
+- name: Unknown_110_S76_UF
+  type: socks5
+  server: 199.116.112.6
+  port: 4145
+  udp: true
+- name: Unknown_111_S76_UF
+  type: socks5
+  server: 192.252.208.67
+  port: 14287
+  udp: true
+- name: Unknown_112_S76_UF
+  type: socks5
+  server: 198.8.94.174
+  port: 39078
+  udp: true
+- name: United States_113_S76_EM
+  type: socks5
+  server: 174.75.211.193
+  port: 4145
+  udp: true
+- name: France_114_S76_EM
   type: socks5
   server: 157.90.113.23
   port: 9052
   udp: true
-- name: Unknown_166_S73_UF
+- name: Switzerland_115_S76_EF
   type: socks5
-  server: 192.111.130.5
-  port: 17002
+  server: 165.225.66.43
+  port: 11588
   udp: true
-- name: Unknown_167_S73_UM
+- name: Unknown_116_S76_UM
   type: socks5
-  server: 24.249.199.12
+  server: 70.166.167.55
+  port: 57745
+  udp: true
+- name: Unknown_117_S76_UM
+  type: socks5
+  server: 98.175.31.222
   port: 4145
   udp: true
-- name: Hong Kong_168_S73_EF
+- name: Hong Kong_118_S75_EM
   type: socks5
-  server: 218.252.192.228
-  port: 80
+  server: 123.58.219.171
+  port: 10808
   udp: true
-- name: Hong Kong_169_S73_EF
+- name: Unknown_119_S75_UF
   type: socks5
-  server: 203.19.38.114
-  port: 1080
-  udp: true
-- name: Malaysia_170_S73_EF
-  type: socks5
-  server: 219.93.101.60
-  port: 80
-  udp: true
-- name: Malaysia_171_S73_EF
-  type: socks5
-  server: 219.93.101.63
-  port: 80
-  udp: true
-- name: Indonesia_172_S73_EF
-  type: socks5
-  server: 103.151.20.131
-  port: 80
-  udp: true
-- name: China_173_S73_EF
-  type: socks5
-  server: 39.106.165.196
-  port: 8080
-  udp: true
-- name: China_174_S73_EF
-  type: socks5
-  server: 61.158.175.38
-  port: 9002
-  udp: true
-- name: China_175_S73_EF
-  type: socks5
-  server: 36.213.79.159
-  port: 1080
-  udp: true
-- name: The Netherlands_176_S73_EF
-  type: socks5
-  server: 72.56.73.23
-  port: 80
-  udp: true
-- name: Russia_177_S73_EF
-  type: socks5
-  server: 176.106.241.50
-  port: 80
-  udp: true
-- name: Poland_178_S73_EF
-  type: socks5
-  server: 79.110.200.27
-  port: 8000
-  udp: true
-- name: Russia_179_S73_EF
-  type: socks5
-  server: 31.10.83.158
-  port: 8080
-  udp: true
-- name: Unknown_180_S73_UF
-  type: socks5
-  server: 79.110.202.131
-  port: 8081
-  udp: true
-- name: Macao_181_S73_EF
-  type: socks5
-  server: 27.109.158.122
-  port: 80
-  udp: true
-- name: Russia_182_S73_EF
-  type: socks5
-  server: 95.66.138.21
-  port: 8880
-  udp: true
-- name: Bangladesh_183_S73_EF
-  type: socks5
-  server: 115.127.31.66
-  port: 8080
-  udp: true
-- name: Russia_184_S73_EF
-  type: socks5
-  server: 109.194.34.246
-  port: 8082
-  udp: true
-- name: Unknown_185_S73_UF
-  type: socks5
-  server: 12.50.107.217
-  port: 80
-  udp: true
-- name: Poland_186_S73_EF
-  type: socks5
-  server: 185.49.31.205
-  port: 8080
-  udp: true
-- name: Unknown_187_S73_UF
-  type: socks5
-  server: 39.106.170.168
-  port: 8080
-  udp: true
-- name: Unknown_188_S73_UF
-  type: socks5
-  server: 47.85.161.37
-  port: 3128
-  udp: true
-- name: Unknown_189_S73_UF
-  type: socks5
-  server: 185.17.153.178
-  port: 8080
-  udp: true
-- name: Iran_190_S73_EF
-  type: socks5
-  server: 185.88.177.40
-  port: 80
-  udp: true
-- name: Russia_191_S73_EF
-  type: socks5
-  server: 37.110.147.13
-  port: 80
-  udp: true
-- name: Nigeria_192_S73_EF
-  type: socks5
-  server: 41.184.92.220
-  port: 80
-  udp: true
-- name: Sweden_193_S73_EF
-  type: socks5
-  server: 171.25.158.95
-  port: 1080
-  udp: true
-- name: Unknown_194_S73_UF
-  type: socks5
-  server: 139.196.46.164
-  port: 8888
-  udp: true
-- name: Russia_195_S73_EF
-  type: socks5
-  server: 91.202.185.69
-  port: 80
-  udp: true
-- name: Unknown_196_S73_UF
-  type: socks5
-  server: 120.55.240.71
-  port: 8647
-  udp: true
-- name: Ecuador_197_S73_EF
-  type: socks5
-  server: 45.186.6.104
-  port: 3128
-  udp: true
-- name: Unknown_198_S73_UF
-  type: socks5
-  server: 12.50.107.221
-  port: 80
-  udp: true
-- name: Unknown_199_S73_UF
-  type: socks5
-  server: 47.91.104.88
-  port: 3128
-  udp: true
-- name: Unknown_200_S73_UF
-  type: socks5
-  server: 144.31.185.67
-  port: 8080
-  udp: true
-- name: Brazil_201_S73_EF
-  type: socks5
-  server: 191.252.195.73
-  port: 80
-  udp: true
-- name: Unknown_202_S73_UF
-  type: socks5
-  server: 153.72.68.0
-  port: 8081
-  udp: true
-- name: Unknown_203_S73_UF
-  type: socks5
-  server: 47.103.30.64
-  port: 8080
-  udp: true
-- name: Unknown_204_S73_UF
-  type: socks5
-  server: 178.140.3.161
-  port: 5678
-  udp: true
-- name: Unknown_205_S73_UF
-  type: socks5
-  server: 153.72.68.0
-  port: 8080
-  udp: true
-- name: Poland_206_S73_EF
-  type: socks5
-  server: 83.168.74.163
-  port: 8080
-  udp: true
-- name: Spain_207_S73_EF
-  type: socks5
-  server: 195.114.209.50
-  port: 80
-  udp: true
-- name: Poland_208_S73_EF
-  type: socks5
-  server: 79.110.192.44
-  port: 8081
-  udp: true
-- name: Ukraine_209_S73_EF
-  type: socks5
-  server: 31.148.207.153
-  port: 80
-  udp: true
-- name: Unknown_210_S73_UF
-  type: socks5
-  server: 87.121.148.126
-  port: 49200
-  udp: true
-- name: Unknown_211_S73_UF
-  type: socks5
-  server: 185.26.181.254
-  port: 80
-  udp: true
-- name: Unknown_212_S73_UF
-  type: socks5
-  server: 38.22.92.75
-  port: 808
-  udp: true
-- name: India_213_S73_EF
-  type: socks5
-  server: 139.59.1.14
-  port: 8080
-  udp: true
-- name: Russia_214_S73_EF
-  type: socks5
-  server: 109.95.220.45
-  port: 8080
-  udp: true
-- name: Unknown_215_S71_UM
-  type: socks5
-  server: 47.242.218.151
-  port: 9020
-  udp: true
-- name: United Kingdom_216_S70_EM
-  type: socks5
-  server: 47.251.73.54
-  port: 9080
-  udp: true
-- name: United Kingdom_217_S70_EM
-  type: socks5
-  server: 47.252.11.233
-  port: 20000
-  udp: true
-- name: United Kingdom_218_S70_EM
-  type: socks5
-  server: 47.251.87.199
-  port: 80
-  udp: true
-- name: United Kingdom_219_S70_EM
-  type: socks5
-  server: 47.90.167.27
-  port: 9080
-  udp: true
-- name: United Kingdom_220_S70_EM
-  type: socks5
-  server: 8.211.194.85
-  port: 808
-  udp: true
-- name: United Kingdom_221_S70_EM
-  type: socks5
-  server: 8.211.195.173
-  port: 8443
-  udp: true
-- name: United Kingdom_222_S70_EM
-  type: socks5
-  server: 8.209.96.245
-  port: 7070
-  udp: true
-- name: United Kingdom_223_S70_EM
-  type: socks5
-  server: 8.211.49.86
-  port: 1081
-  udp: true
-- name: United Kingdom_224_S70_EM
-  type: socks5
-  server: 47.76.144.139
-  port: 11
-  udp: true
-- name: United Kingdom_225_S70_EM
-  type: socks5
-  server: 8.220.141.8
-  port: 50
-  udp: true
-- name: United Kingdom_226_S70_EM
-  type: socks5
-  server: 106.14.91.83
-  port: 7890
-  udp: true
-- name: United Kingdom_227_S70_EM
-  type: socks5
-  server: 139.224.186.221
-  port: 1111
-  udp: true
-- name: United Kingdom_228_S70_EM
-  type: socks5
-  server: 47.119.19.221
-  port: 8085
-  udp: true
-- name: United Kingdom_229_S70_EM
-  type: socks5
-  server: 8.138.133.207
-  port: 9098
-  udp: true
-- name: United Kingdom_230_S70_EM
-  type: socks5
-  server: 139.196.175.68
-  port: 8080
-  udp: true
-- name: United Kingdom_231_S70_EM
-  type: socks5
-  server: 101.132.252.152
-  port: 1081
-  udp: true
-- name: United Kingdom_232_S70_EM
-  type: socks5
-  server: 120.26.52.35
-  port: 3333
-  udp: true
-- name: United Kingdom_233_S70_EM
-  type: socks5
-  server: 120.26.104.146
-  port: 9080
-  udp: true
-- name: United Kingdom_234_S70_EM
-  type: socks5
-  server: 47.119.20.8
-  port: 8081
-  udp: true
-- name: United Kingdom_235_S70_EM
-  type: socks5
-  server: 120.25.189.254
-  port: 8080
-  udp: true
-- name: United Kingdom_236_S70_EM
-  type: socks5
-  server: 47.104.27.249
-  port: 9080
-  udp: true
-- name: United Kingdom_237_S70_EM
-  type: socks5
-  server: 114.215.127.92
-  port: 6379
-  udp: true
-- name: United Kingdom_238_S70_EM
-  type: socks5
-  server: 47.104.198.111
-  port: 8008
-  udp: true
-- name: United Kingdom_239_S70_EM
-  type: socks5
-  server: 8.213.197.208
-  port: 5060
-  udp: true
-- name: United Kingdom_240_S70_EM
-  type: socks5
-  server: 39.100.88.89
-  port: 80
-  udp: true
-- name: United Kingdom_241_S70_EM
-  type: socks5
-  server: 47.120.0.231
-  port: 9080
-  udp: true
-- name: United Kingdom_242_S70_EM
-  type: socks5
-  server: 47.121.129.129
-  port: 9080
-  udp: true
-- name: United Kingdom_243_S70_EM
-  type: socks5
-  server: 39.102.213.50
-  port: 8089
-  udp: true
-- name: United Kingdom_244_S70_EM
-  type: socks5
-  server: 8.213.222.157
-  port: 8999
-  udp: true
-- name: United Kingdom_245_S70_EM
-  type: socks5
-  server: 39.102.213.213
-  port: 8080
-  udp: true
-- name: United Kingdom_246_S70_EM
-  type: socks5
-  server: 39.102.210.176
-  port: 8081
-  udp: true
-- name: United Kingdom_247_S70_EM
-  type: socks5
-  server: 8.213.222.247
-  port: 5060
-  udp: true
-- name: United Kingdom_248_S70_EM
-  type: socks5
-  server: 8.148.23.165
-  port: 1111
-  udp: true
-- name: United Kingdom_249_S70_EM
-  type: socks5
-  server: 39.102.209.121
-  port: 8081
-  udp: true
-- name: United Kingdom_250_S70_EM
-  type: socks5
-  server: 39.104.23.154
-  port: 8081
-  udp: true
-- name: United Kingdom_251_S70_EM
-  type: socks5
-  server: 47.108.159.113
-  port: 4006
-  udp: true
-- name: United Kingdom_252_S70_EM
-  type: socks5
-  server: 39.104.57.33
-  port: 9098
-  udp: true
-- name: United Kingdom_253_S70_EM
-  type: socks5
-  server: 8.137.13.191
-  port: 6666
-  udp: true
-- name: United Kingdom_254_S70_EM
-  type: socks5
-  server: 8.211.195.139
-  port: 20002
-  udp: true
-- name: United Kingdom_255_S70_EM
-  type: socks5
-  server: 47.100.130.127
-  port: 3129
-  udp: true
-- name: United Kingdom_256_S70_EM
-  type: socks5
-  server: 47.100.73.178
-  port: 45
-  udp: true
-- name: United Kingdom_257_S70_EM
-  type: socks5
-  server: 39.102.213.3
-  port: 9098
-  udp: true
-- name: United Kingdom_258_S70_EM
-  type: socks5
-  server: 39.102.211.64
-  port: 8090
-  udp: true
-- name: United Kingdom_259_S70_EM
-  type: socks5
-  server: 8.146.200.53
-  port: 8008
-  udp: true
-- name: United Kingdom_260_S70_EM
-  type: socks5
-  server: 39.104.59.56
-  port: 8089
-  udp: true
-- name: United Kingdom_261_S70_EM
-  type: socks5
-  server: 8.138.131.110
-  port: 8443
-  udp: true
-- name: United Kingdom_262_S70_EM
-  type: socks5
-  server: 47.90.149.238
-  port: 8888
-  udp: true
-- name: United Kingdom_263_S70_EM
-  type: socks5
-  server: 8.148.20.126
-  port: 9098
-  udp: true
-- name: United Kingdom_264_S70_EM
-  type: socks5
-  server: 47.91.115.179
-  port: 3128
-  udp: true
-- name: United Kingdom_265_S70_EM
-  type: socks5
-  server: 8.221.138.111
-  port: 111
-  udp: true
-- name: United Kingdom_266_S70_EM
-  type: socks5
-  server: 8.221.141.88
-  port: 9080
-  udp: true
-- name: United Kingdom_267_S70_EM
-  type: socks5
-  server: 47.105.122.72
-  port: 9080
-  udp: true
-- name: United Kingdom_268_S70_EM
-  type: socks5
-  server: 47.238.128.246
-  port: 8888
-  udp: true
-- name: United Kingdom_269_S70_EM
-  type: socks5
-  server: 47.119.22.156
-  port: 8081
-  udp: true
-- name: United Kingdom_270_S70_EM
-  type: socks5
-  server: 47.237.92.86
-  port: 6379
-  udp: true
-- name: United Kingdom_271_S70_EM
-  type: socks5
-  server: 101.132.249.207
-  port: 1337
-  udp: true
-- name: United Kingdom_272_S70_EM
-  type: socks5
-  server: 121.43.154.123
-  port: 9098
-  udp: true
-- name: United Kingdom_273_S70_EM
-  type: socks5
-  server: 39.102.213.187
-  port: 12000
-  udp: true
-- name: United Kingdom_274_S70_EM
-  type: socks5
-  server: 8.213.215.187
-  port: 2000
-  udp: true
-- name: United Kingdom_275_S70_EM
-  type: socks5
-  server: 39.102.211.162
-  port: 10000
-  udp: true
-- name: United Kingdom_276_S70_EM
-  type: socks5
-  server: 39.102.214.199
-  port: 9999
-  udp: true
-- name: United Kingdom_277_S70_EM
-  type: socks5
-  server: 8.148.22.214
-  port: 20002
-  udp: true
-- name: United Kingdom_278_S70_EM
-  type: socks5
-  server: 8.148.23.202
-  port: 9080
-  udp: true
-- name: United Kingdom_279_S70_EM
-  type: socks5
-  server: 47.238.130.212
-  port: 2000
-  udp: true
-- name: United Kingdom_280_S70_EM
-  type: socks5
-  server: 47.91.109.17
-  port: 8090
-  udp: true
-- name: United Kingdom_281_S70_EM
-  type: socks5
-  server: 8.138.149.37
-  port: 9080
-  udp: true
-- name: United Kingdom_282_S70_EM
-  type: socks5
-  server: 8.220.204.215
-  port: 1081
-  udp: true
-- name: United Kingdom_283_S70_EM
-  type: socks5
-  server: 39.104.27.89
-  port: 9098
-  udp: true
-- name: United Kingdom_284_S70_EM
-  type: socks5
-  server: 39.102.209.163
-  port: 8090
-  udp: true
-- name: United Kingdom_285_S70_EM
-  type: socks5
-  server: 39.102.208.23
-  port: 8008
-  udp: true
-- name: United Kingdom_286_S70_EM
-  type: socks5
-  server: 8.219.229.53
-  port: 443
-  udp: true
-- name: United Kingdom_287_S70_EM
-  type: socks5
-  server: 121.43.109.88
-  port: 8047
-  udp: true
-- name: United Kingdom_288_S70_EM
-  type: socks5
-  server: 47.116.210.163
-  port: 9080
-  udp: true
-- name: United Kingdom_289_S70_EM
-  type: socks5
-  server: 47.119.22.92
-  port: 9080
-  udp: true
-- name: United Kingdom_290_S70_EM
-  type: socks5
-  server: 47.92.82.167
-  port: 8333
-  udp: true
-- name: United Kingdom_291_S70_EM
-  type: socks5
-  server: 47.74.46.81
-  port: 8118
-  udp: true
-- name: United Kingdom_292_S70_EM
-  type: socks5
-  server: 8.134.149.133
-  port: 9080
-  udp: true
-- name: United Kingdom_293_S70_EM
-  type: socks5
-  server: 8.138.82.6
-  port: 8443
-  udp: true
-- name: United Kingdom_294_S70_EM
-  type: socks5
-  server: 47.121.183.107
-  port: 9098
-  udp: true
-- name: United Kingdom_295_S70_EM
-  type: socks5
-  server: 47.104.28.135
-  port: 9200
-  udp: true
-- name: United Kingdom_296_S70_EM
-  type: socks5
-  server: 8.130.54.67
-  port: 8004
-  udp: true
-- name: United Kingdom_297_S70_EM
-  type: socks5
-  server: 47.92.152.43
-  port: 8443
-  udp: true
-- name: United Kingdom_298_S70_EM
-  type: socks5
-  server: 8.138.125.130
-  port: 9098
-  udp: true
-- name: United Kingdom_299_S70_EM
-  type: socks5
-  server: 47.237.107.41
-  port: 5060
-  udp: true
-- name: United Kingdom_300_S70_EM
-  type: socks5
-  server: 47.121.133.212
-  port: 8080
-  udp: true
-- name: United Kingdom_301_S70_EM
-  type: socks5
-  server: 47.250.51.110
-  port: 808
-  udp: true
-- name: United Kingdom_302_S70_EM
-  type: socks5
-  server: 47.250.11.111
-  port: 69
-  udp: true
-- name: United Kingdom_303_S70_EM
-  type: socks5
-  server: 8.137.62.53
-  port: 9098
-  udp: true
-- name: United Kingdom_304_S70_EM
-  type: socks5
-  server: 39.104.69.76
-  port: 8008
-  udp: true
-- name: United Kingdom_305_S70_EM
-  type: socks5
-  server: 139.224.195.153
-  port: 3129
-  udp: true
-- name: United Kingdom_306_S70_EM
-  type: socks5
-  server: 39.102.209.128
-  port: 3128
-  udp: true
-- name: United Kingdom_307_S70_EM
-  type: socks5
-  server: 106.15.137.41
-  port: 1337
-  udp: true
-- name: Germany_308_S70_EM
-  type: socks5
-  server: 65.108.159.129
-  port: 8081
-  udp: true
-- name: United Kingdom_309_S70_EM
-  type: socks5
-  server: 47.91.120.190
-  port: 1025
-  udp: true
-- name: United Kingdom_310_S70_EM
-  type: socks5
-  server: 47.251.74.38
-  port: 9098
-  udp: true
-- name: United Kingdom_311_S70_EM
-  type: socks5
-  server: 47.104.27.165
-  port: 8081
-  udp: true
-- name: United Kingdom_312_S70_EM
-  type: socks5
-  server: 8.220.204.92
-  port: 8888
-  udp: true
-- name: United Kingdom_313_S70_EM
-  type: socks5
-  server: 47.109.83.196
-  port: 9080
-  udp: true
-- name: United Kingdom_314_S70_EM
-  type: socks5
-  server: 8.221.139.222
-  port: 6379
-  udp: true
-- name: United Kingdom_315_S70_EM
-  type: socks5
-  server: 106.14.104.220
-  port: 5080
-  udp: true
-- name: United Kingdom_316_S70_EM
-  type: socks5
-  server: 39.102.210.222
-  port: 8888
-  udp: true
-- name: United Kingdom_317_S70_EM
-  type: socks5
-  server: 39.102.208.149
-  port: 9050
-  udp: true
-- name: United Kingdom_318_S70_EM
-  type: socks5
-  server: 47.99.112.148
-  port: 11
-  udp: true
-- name: United Kingdom_319_S70_EM
-  type: socks5
-  server: 47.238.60.156
-  port: 8095
-  udp: true
-- name: United Kingdom_320_S70_EM
-  type: socks5
-  server: 8.130.36.163
-  port: 8080
-  udp: true
-- name: United Kingdom_321_S70_EM
-  type: socks5
-  server: 8.130.37.235
-  port: 8081
-  udp: true
-- name: United Kingdom_322_S70_EM
-  type: socks5
-  server: 47.250.177.202
-  port: 8081
-  udp: true
-- name: United Kingdom_323_S70_EM
-  type: socks5
-  server: 39.102.214.208
-  port: 8008
-  udp: true
-- name: United Kingdom_324_S70_EM
-  type: socks5
-  server: 8.215.15.163
-  port: 8008
-  udp: true
-- name: United Kingdom_325_S70_EM
-  type: socks5
-  server: 47.116.126.57
-  port: 8443
-  udp: true
-- name: United Kingdom_326_S70_EM
-  type: socks5
-  server: 47.91.29.151
-  port: 1311
-  udp: true
-- name: United Kingdom_327_S70_EM
-  type: socks5
-  server: 8.220.205.172
-  port: 4002
-  udp: true
-- name: United Kingdom_328_S70_EM
-  type: socks5
-  server: 8.130.74.114
-  port: 8888
-  udp: true
-- name: United Kingdom_329_S70_EM
-  type: socks5
-  server: 39.102.214.192
-  port: 80
-  udp: true
-- name: United Kingdom_330_S70_EM
-  type: socks5
-  server: 8.130.90.177
-  port: 3129
-  udp: true
-- name: United Kingdom_331_S70_EM
-  type: socks5
-  server: 39.104.16.201
-  port: 8080
-  udp: true
-- name: United Kingdom_332_S70_EM
-  type: socks5
-  server: 8.211.51.115
-  port: 1080
-  udp: true
-- name: United Kingdom_333_S70_EM
-  type: socks5
-  server: 8.212.165.164
-  port: 5001
-  udp: true
-- name: United Kingdom_334_S70_EM
-  type: socks5
-  server: 149.129.226.9
-  port: 32768
-  udp: true
-- name: United Kingdom_335_S70_EM
-  type: socks5
-  server: 8.220.136.174
-  port: 8086
-  udp: true
-- name: United Kingdom_336_S70_EM
-  type: socks5
-  server: 106.15.58.163
-  port: 3129
-  udp: true
-- name: United Kingdom_337_S70_EM
-  type: socks5
-  server: 47.92.143.92
-  port: 8888
-  udp: true
-- name: United Kingdom_338_S70_EM
-  type: socks5
-  server: 47.109.110.100
-  port: 8888
-  udp: true
-- name: United Kingdom_339_S70_EM
-  type: socks5
-  server: 8.211.200.183
-  port: 8080
-  udp: true
-- name: United Kingdom_340_S70_EM
-  type: socks5
-  server: 8.148.4.166
-  port: 9098
-  udp: true
-- name: United Kingdom_341_S70_EM
-  type: socks5
-  server: 8.148.24.225
-  port: 8443
-  udp: true
-- name: United Kingdom_342_S70_EM
-  type: socks5
-  server: 47.251.87.74
-  port: 8443
-  udp: true
-- name: United Kingdom_343_S70_EM
-  type: socks5
-  server: 8.137.38.48
-  port: 7890
-  udp: true
-- name: United Kingdom_344_S70_EM
-  type: socks5
-  server: 8.212.168.170
-  port: 80
-  udp: true
-- name: United Kingdom_345_S70_EM
-  type: socks5
-  server: 47.121.182.36
-  port: 8008
-  udp: true
-- name: United Kingdom_346_S70_EM
-  type: socks5
-  server: 8.130.71.75
-  port: 7890
-  udp: true
-- name: United Kingdom_347_S70_EM
-  type: socks5
-  server: 47.91.110.148
-  port: 20
-  udp: true
-- name: United Kingdom_348_S70_EM
-  type: socks5
-  server: 39.102.208.189
-  port: 3129
-  udp: true
-- name: Unknown_349_S69_UF
-  type: socks5
-  server: 88.201.248.85
-  port: 1080
-  udp: true
-- name: Hong Kong_350_S68_EM
-  type: socks5
-  server: 176.111.37.5
-  port: 39811
-  udp: true
-- name: Hong Kong_351_S68_EM
-  type: socks5
-  server: 45.194.33.12
-  port: 30001
-  udp: true
-- name: Malaysia_352_S68_EM
-  type: socks5
-  server: 219.93.101.62
-  port: 80
-  udp: true
-- name: Indonesia_353_S68_EM
-  type: socks5
-  server: 103.65.237.92
-  port: 5678
-  udp: true
-- name: Cambodia_354_S68_EM
-  type: socks5
-  server: 103.63.190.72
-  port: 8080
-  udp: true
-- name: Cambodia_355_S68_EM
-  type: socks5
-  server: 203.95.199.159
-  port: 8080
-  udp: true
-- name: Russia_356_S68_EM
-  type: socks5
-  server: 93.171.157.249
-  port: 8080
-  udp: true
-- name: Iraq_357_S68_TF
-  type: socks5
-  server: 185.135.69.34
-  port: 80
-  udp: true
-- name: Unknown_358_S68_UM
-  type: socks5
-  server: 102.209.56.21
-  port: 80
-  udp: true
-- name: Senegal_359_S68_EM
-  type: socks5
-  server: 196.1.93.16
-  port: 80
-  udp: true
-- name: Italy_360_S68_EM
-  type: socks5
-  server: 77.242.177.57
-  port: 3128
-  udp: true
-- name: Bulgaria_361_S68_TF
-  type: socks5
-  server: 93.123.16.38
-  port: 80
-  udp: true
-- name: Unknown_362_S68_UM
-  type: socks5
-  server: 102.164.252.150
-  port: 8080
-  udp: true
-- name: India_363_S68_EM
-  type: socks5
-  server: 103.51.223.133
-  port: 8080
-  udp: true
-- name: Denmark_364_S68_EM
-  type: socks5
-  server: 45.61.129.165
-  port: 9050
-  udp: true
-- name: The Netherlands_365_S68_EM
-  type: socks5
-  server: 128.140.113.110
-  port: 5678
-  udp: true
-- name: Unknown_366_S68_UM
-  type: socks5
-  server: 196.1.93.10
-  port: 80
-  udp: true
-- name: Unknown_367_S67_UM
-  type: socks5
-  server: 5.75.133.113
-  port: 10813
-  udp: true
-- name: Unknown_368_S66_UM
-  type: socks5
-  server: 72.195.34.42
+  server: 72.37.216.68
   port: 4145
   udp: true
-- name: Hong Kong_369_S65_EM
+- name: Unknown_120_S75_UF
   type: socks5
-  server: 203.82.253.47
-  port: 80
+  server: 107.181.168.145
+  port: 4145
   udp: true
-- name: United Kingdom_370_S65_EM
+- name: United States_121_S75_EM
   type: socks5
-  server: 47.121.182.88
-  port: 1110
+  server: 98.190.239.3
+  port: 4145
   udp: true
-- name: Unknown_371_S64_UM
-  type: socks5
-  server: 195.13.182.211
-  port: 443
-  udp: true
-- name: Hong Kong_372_S63_EM
-  type: socks5
-  server: 39.109.113.97
-  port: 4090
-  udp: true
-- name: The Netherlands_373_S63_EM
-  type: socks5
-  server: 128.140.113.110
-  port: 8081
-  udp: true
-- name: Unknown_374_S63_UM
-  type: socks5
-  server: 47.89.159.212
-  port: 8083
-  udp: true
-- name: Unknown_375_S63_UM
+- name: Japan_122_S75_EM
   type: socks5
   server: 8.216.40.169
   port: 7890
   udp: true
-- name: Unknown_376_S63_UM
+- name: United Kingdom_123_S75_EM
   type: socks5
-  server: 85.214.107.177
+  server: 47.90.149.238
+  port: 8888
+  udp: true
+- name: Unknown_124_S74_UM
+  type: socks5
+  server: 184.181.178.33
+  port: 4145
+  udp: true
+- name: Unknown_125_S74_UF
+  type: socks5
+  server: 184.170.249.65
+  port: 4145
+  udp: true
+- name: Unknown_126_S74_UF
+  type: socks5
+  server: 192.111.137.35
+  port: 4145
+  udp: true
+- name: United States_127_S74_EM
+  type: socks5
+  server: 98.181.137.80
+  port: 4145
+  udp: true
+- name: Unknown_128_S74_UM
+  type: socks5
+  server: 8.213.195.191
+  port: 31433
+  udp: true
+- name: Unknown_129_S74_UM
+  type: socks5
+  server: 184.178.172.18
+  port: 15280
+  udp: true
+- name: Unknown_130_S74_UM
+  type: socks5
+  server: 98.178.72.30
+  port: 4145
+  udp: true
+- name: Unknown_131_S73_UM
+  type: socks5
+  server: 8.211.42.167
+  port: 8000
+  udp: true
+- name: Hong Kong_132_S73_EF
+  type: socks5
+  server: 218.252.192.228
   port: 80
   udp: true
-- name: Unknown_377_S63_UF
+- name: Hong Kong_133_S73_EF
   type: socks5
-  server: 34.70.79.204
+  server: 39.109.113.97
+  port: 4090
+  udp: true
+- name: Hong Kong_134_S73_EF
+  type: socks5
+  server: 203.19.38.114
   port: 1080
   udp: true
-- name: Unknown_378_S63_UM
+- name: Cambodia_135_S73_EF
   type: socks5
-  server: 128.140.113.110
+  server: 103.63.190.72
+  port: 8080
+  udp: true
+- name: China_136_S73_EF
+  type: socks5
+  server: 139.196.46.164
+  port: 8888
+  udp: true
+- name: China_137_S73_EF
+  type: socks5
+  server: 120.55.240.71
+  port: 8647
+  udp: true
+- name: China_138_S73_EF
+  type: socks5
+  server: 39.106.165.196
+  port: 8080
+  udp: true
+- name: Unknown_139_S73_UF
+  type: socks5
+  server: 47.85.161.37
   port: 3128
   udp: true
-- name: Unknown_379_S63_UM
+- name: Unknown_140_S73_UF
   type: socks5
-  server: 164.52.11.194
-  port: 18080
+  server: 38.22.92.75
+  port: 808
   udp: true
-- name: The Netherlands_380_S63_EM
+- name: Russia_141_S73_EF
   type: socks5
-  server: 128.140.113.110
-  port: 1080
-  udp: true
-- name: Unknown_381_S63_UM
-  type: socks5
-  server: 47.237.113.119
+  server: 176.106.241.50
   port: 80
   udp: true
-- name: Unknown_382_S63_UM
+- name: Russia_142_S73_EF
   type: socks5
-  server: 47.237.2.245
-  port: 1234
+  server: 31.10.83.158
+  port: 8080
   udp: true
-- name: Unknown_383_S63_UM
+- name: Ukraine_143_S73_EF
   type: socks5
-  server: 39.102.208.236
+  server: 31.148.207.153
+  port: 80
+  udp: true
+- name: Macao_144_S73_EF
+  type: socks5
+  server: 27.109.158.122
+  port: 80
+  udp: true
+- name: Unknown_145_S73_UF
+  type: socks5
+  server: 47.91.104.88
   port: 3128
   udp: true
-- name: Unknown_384_S63_UM
+- name: Russia_146_S73_EF
   type: socks5
-  server: 47.91.89.3
-  port: 35
+  server: 95.66.138.21
+  port: 8880
   udp: true
-- name: Unknown_385_S63_UM
+- name: Poland_147_S73_EF
   type: socks5
-  server: 8.210.17.35
-  port: 999
+  server: 79.110.200.27
+  port: 8000
   udp: true
-- name: Unknown_386_S63_UM
+- name: Russia_148_S73_EF
   type: socks5
-  server: 101.200.158.109
+  server: 109.95.220.45
   port: 8080
   udp: true
-- name: The Netherlands_387_S63_EM
+- name: Russia_149_S73_EF
   type: socks5
-  server: 128.140.113.110
-  port: 5153
+  server: 91.202.185.69
+  port: 80
   udp: true
-- name: Unknown_388_S63_UM
+- name: Iran_150_S73_EF
   type: socks5
-  server: 47.250.159.65
-  port: 55443
+  server: 185.88.177.40
+  port: 80
   udp: true
-- name: Unknown_389_S63_UM
+- name: Unknown_151_S73_UF
   type: socks5
-  server: 38.111.103.17
+  server: 185.17.153.178
   port: 8080
   udp: true
-- name: Unknown_390_S63_UM
+- name: Poland_152_S73_EF
   type: socks5
-  server: 8.213.128.6
-  port: 7777
+  server: 79.110.192.44
+  port: 8081
   udp: true
-- name: Unknown_391_S59_UM
+- name: Unknown_153_S73_UF
   type: socks5
-  server: 37.193.218.66
+  server: 144.31.185.67
+  port: 8080
+  udp: true
+- name: The Netherlands_154_S73_EF
+  type: socks5
+  server: 72.56.73.23
+  port: 80
+  udp: true
+- name: Poland_155_S73_EF
+  type: socks5
+  server: 185.49.31.205
+  port: 8080
+  udp: true
+- name: Unknown_156_S73_UF
+  type: socks5
+  server: 153.72.68.0
+  port: 8080
+  udp: true
+- name: Brazil_157_S73_EF
+  type: socks5
+  server: 191.252.195.73
+  port: 80
+  udp: true
+- name: Egypt_158_S73_EF
+  type: socks5
+  server: 213.131.85.28
+  port: 1976
+  udp: true
+- name: Senegal_159_S73_EF
+  type: socks5
+  server: 196.1.93.10
+  port: 80
+  udp: true
+- name: Senegal_160_S73_EF
+  type: socks5
+  server: 196.1.93.16
+  port: 80
+  udp: true
+- name: India_161_S73_EF
+  type: socks5
+  server: 139.59.1.14
+  port: 8080
+  udp: true
+- name: Nigeria_162_S73_EF
+  type: socks5
+  server: 41.184.92.220
+  port: 80
+  udp: true
+- name: Spain_163_S73_EF
+  type: socks5
+  server: 195.114.209.50
+  port: 80
+  udp: true
+- name: Unknown_164_S73_UF
+  type: socks5
+  server: 79.110.202.131
+  port: 8081
+  udp: true
+- name: Russia_165_S73_EF
+  type: socks5
+  server: 109.194.34.246
+  port: 8082
+  udp: true
+- name: Poland_166_S73_EF
+  type: socks5
+  server: 83.168.74.163
+  port: 8080
+  udp: true
+- name: Italy_167_S73_EF
+  type: socks5
+  server: 77.242.177.57
+  port: 3128
+  udp: true
+- name: Unknown_168_S73_UF
+  type: socks5
+  server: 185.26.181.254
+  port: 80
+  udp: true
+- name: Unknown_169_S73_UF
+  type: socks5
+  server: 87.121.148.126
+  port: 49200
+  udp: true
+- name: Ecuador_170_S73_EF
+  type: socks5
+  server: 45.186.6.104
+  port: 3128
+  udp: true
+- name: Unknown_171_S73_UF
+  type: socks5
+  server: 178.140.3.161
+  port: 5678
+  udp: true
+- name: Unknown_172_S73_UF
+  type: socks5
+  server: 34.43.46.91
+  port: 443
+  udp: true
+- name: Unknown_173_S73_UF
+  type: socks5
+  server: 47.103.30.64
+  port: 8080
+  udp: true
+- name: United Kingdom_174_S72_EM
+  type: socks5
+  server: 47.238.130.212
+  port: 5000
+  udp: true
+- name: Hong Kong_175_S72_EM
+  type: socks5
+  server: 47.242.218.151
+  port: 9020
+  udp: true
+- name: Unknown_176_S72_UM
+  type: socks5
+  server: 72.207.33.64
+  port: 4145
+  udp: true
+- name: Unknown_177_S71_UM
+  type: socks5
+  server: 72.195.101.99
+  port: 4145
+  udp: true
+- name: Türkiye_178_S71_EF
+  type: socks5
+  server: 193.255.128.2
+  port: 80
+  udp: true
+- name: Russia_179_S71_EM
+  type: socks5
+  server: 91.143.161.163
   port: 1080
   udp: true
-- name: United States_392_S55_EM
+- name: Unknown_180_S71_UM
   type: socks5
-  server: 67.210.146.50
-  port: 11080
+  server: 72.194.42.156
+  port: 4145
   udp: true
-- name: United States_393_S55_EM
+- name: Unknown_181_S70_UM
   type: socks5
-  server: 193.218.118.128
-  port: 1080
+  server: 72.195.114.184
+  port: 4145
   udp: true
-- name: United States_394_S55_EM
+- name: Taiwan_182_S70_EF
   type: socks5
-  server: 174.77.111.198
-  port: 49547
+  server: 34.81.160.132
+  port: 80
   udp: true
-- name: Unknown_395_S53_UM
+- name: Singapore_183_S70_EF
   type: socks5
-  server: 45.65.224.125
-  port: 999
+  server: 4.144.146.21
+  port: 80
   udp: true
-- name: Unknown_396_S53_UF
+- name: South Korea_184_S70_EM
   type: socks5
-  server: 5.75.133.113
-  port: 10806
-  udp: true
-- name: France_397_S50_EM
-  type: socks5
-  server: 95.216.45.44
-  port: 10000
-  udp: true
-- name: United Kingdom_398_S50_EM
-  type: socks5
-  server: 47.91.121.127
-  port: 20
-  udp: true
-- name: United Kingdom_399_S50_EM
-  type: socks5
-  server: 47.250.155.254
-  port: 10002
-  udp: true
-- name: Unknown_400_S48_UM
-  type: socks5
-  server: 194.44.255.112
+  server: 183.110.216.128
   port: 8090
   udp: true
-- name: Chile_401_S48_EM
+- name: South Korea_185_S70_EF
+  type: socks5
+  server: 183.110.216.159
+  port: 8090
+  udp: true
+- name: United States_186_S70_EM
   type: socks5
   server: 5.75.133.113
   port: 10805
   udp: true
-- name: Unknown_402_S48_UM
+- name: United States_187_S70_EM
   type: socks5
-  server: 132.243.168.30
-  port: 9150
+  server: 12.50.107.221
+  port: 80
   udp: true
-- name: Unknown_403_S48_UM
+- name: United Kingdom_188_S70_EM
   type: socks5
-  server: 213.176.74.119
+  server: 47.251.87.74
+  port: 8443
+  udp: true
+- name: United Kingdom_189_S70_EM
+  type: socks5
+  server: 47.91.29.151
+  port: 1311
+  udp: true
+- name: United Kingdom_190_S70_EM
+  type: socks5
+  server: 47.74.46.81
+  port: 8118
+  udp: true
+- name: United Kingdom_191_S70_EM
+  type: socks5
+  server: 8.220.205.172
+  port: 4002
+  udp: true
+- name: United Kingdom_192_S70_EM
+  type: socks5
+  server: 8.211.194.85
+  port: 808
+  udp: true
+- name: United Kingdom_193_S70_EM
+  type: socks5
+  server: 8.211.195.139
+  port: 20002
+  udp: true
+- name: United Kingdom_194_S70_EM
+  type: socks5
+  server: 8.211.195.173
+  port: 8443
+  udp: true
+- name: United Kingdom_195_S70_EM
+  type: socks5
+  server: 47.91.89.3
+  port: 35
+  udp: true
+- name: United Kingdom_196_S70_EM
+  type: socks5
+  server: 8.211.51.115
   port: 1080
   udp: true
-- name: India_404_S48_EM
+- name: United Kingdom_197_S70_EM
   type: socks5
-  server: 154.201.127.26
+  server: 47.76.144.139
+  port: 11
+  udp: true
+- name: United Kingdom_198_S70_EM
+  type: socks5
+  server: 39.102.209.121
+  port: 8081
+  udp: true
+- name: United Kingdom_199_S70_EM
+  type: socks5
+  server: 39.102.214.199
+  port: 9999
+  udp: true
+- name: United Kingdom_200_S70_EM
+  type: socks5
+  server: 39.102.213.3
+  port: 9098
+  udp: true
+- name: United Kingdom_201_S70_EM
+  type: socks5
+  server: 39.104.16.201
   port: 8080
   udp: true
-- name: Romania_405_S48_EM
+- name: United Kingdom_202_S70_EM
+  type: socks5
+  server: 8.130.36.163
+  port: 8080
+  udp: true
+- name: United Kingdom_203_S70_EM
+  type: socks5
+  server: 47.121.183.107
+  port: 9098
+  udp: true
+- name: United Kingdom_204_S70_EM
+  type: socks5
+  server: 8.212.165.164
+  port: 5001
+  udp: true
+- name: United Kingdom_205_S70_EM
+  type: socks5
+  server: 47.119.20.8
+  port: 8081
+  udp: true
+- name: United Kingdom_206_S70_EM
+  type: socks5
+  server: 47.119.22.92
+  port: 9080
+  udp: true
+- name: United Kingdom_207_S70_EM
+  type: socks5
+  server: 47.105.122.72
+  port: 9080
+  udp: true
+- name: United Kingdom_208_S70_EM
+  type: socks5
+  server: 8.146.200.53
+  port: 8008
+  udp: true
+- name: United Kingdom_209_S70_EM
+  type: socks5
+  server: 39.102.209.128
+  port: 3128
+  udp: true
+- name: United Kingdom_210_S70_EM
+  type: socks5
+  server: 47.120.0.231
+  port: 9080
+  udp: true
+- name: United Kingdom_211_S70_EM
+  type: socks5
+  server: 47.237.113.119
+  port: 80
+  udp: true
+- name: United Kingdom_212_S70_EM
+  type: socks5
+  server: 39.102.213.50
+  port: 8089
+  udp: true
+- name: United Kingdom_213_S70_EM
+  type: socks5
+  server: 8.134.149.133
+  port: 9080
+  udp: true
+- name: United Kingdom_214_S70_EM
+  type: socks5
+  server: 139.224.186.221
+  port: 1111
+  udp: true
+- name: United Kingdom_215_S70_EM
+  type: socks5
+  server: 8.130.90.177
+  port: 3129
+  udp: true
+- name: United Kingdom_216_S70_EM
+  type: socks5
+  server: 120.26.104.146
+  port: 9080
+  udp: true
+- name: United Kingdom_217_S70_EM
+  type: socks5
+  server: 106.15.137.41
+  port: 1337
+  udp: true
+- name: United Kingdom_218_S70_EM
+  type: socks5
+  server: 114.215.127.92
+  port: 6379
+  udp: true
+- name: United States_219_S70_EM
+  type: socks5
+  server: 34.43.46.91
+  port: 80
+  udp: true
+- name: United Kingdom_220_S70_EM
+  type: socks5
+  server: 47.104.198.111
+  port: 8008
+  udp: true
+- name: United Kingdom_221_S70_EM
+  type: socks5
+  server: 106.15.58.163
+  port: 3129
+  udp: true
+- name: United Kingdom_222_S70_EM
+  type: socks5
+  server: 8.138.133.207
+  port: 9098
+  udp: true
+- name: United Kingdom_223_S70_EM
+  type: socks5
+  server: 47.104.27.165
+  port: 8081
+  udp: true
+- name: United Kingdom_224_S70_EM
+  type: socks5
+  server: 47.238.128.246
+  port: 8888
+  udp: true
+- name: United Kingdom_225_S70_EM
+  type: socks5
+  server: 47.91.120.190
+  port: 1025
+  udp: true
+- name: United Kingdom_226_S70_EM
+  type: socks5
+  server: 47.116.210.163
+  port: 9080
+  udp: true
+- name: United Kingdom_227_S70_EM
+  type: socks5
+  server: 8.220.204.92
+  port: 8888
+  udp: true
+- name: United Kingdom_228_S70_EM
+  type: socks5
+  server: 106.14.91.83
+  port: 7890
+  udp: true
+- name: United Kingdom_229_S70_EM
+  type: socks5
+  server: 8.213.222.247
+  port: 5060
+  udp: true
+- name: United Kingdom_230_S70_EM
+  type: socks5
+  server: 8.138.125.130
+  port: 9098
+  udp: true
+- name: United Kingdom_231_S70_EM
+  type: socks5
+  server: 8.220.204.215
+  port: 1081
+  udp: true
+- name: United Kingdom_232_S70_EM
+  type: socks5
+  server: 8.130.74.114
+  port: 8888
+  udp: true
+- name: United Kingdom_233_S70_EM
+  type: socks5
+  server: 139.224.195.153
+  port: 3129
+  udp: true
+- name: United States_234_S70_EM
+  type: socks5
+  server: 193.218.118.128
+  port: 1080
+  udp: true
+- name: United Kingdom_235_S70_EM
+  type: socks5
+  server: 8.219.229.53
+  port: 443
+  udp: true
+- name: United Kingdom_236_S70_EM
+  type: socks5
+  server: 8.130.54.67
+  port: 8004
+  udp: true
+- name: United States_237_S70_EM
+  type: socks5
+  server: 12.50.107.217
+  port: 80
+  udp: true
+- name: United Kingdom_238_S70_EM
+  type: socks5
+  server: 149.129.226.9
+  port: 32768
+  udp: true
+- name: United Kingdom_239_S70_EM
+  type: socks5
+  server: 47.109.83.196
+  port: 9080
+  udp: true
+- name: United Kingdom_240_S70_EM
+  type: socks5
+  server: 8.211.200.183
+  port: 8080
+  udp: true
+- name: United Kingdom_241_S70_EM
+  type: socks5
+  server: 47.92.143.92
+  port: 8888
+  udp: true
+- name: United Kingdom_242_S70_EM
+  type: socks5
+  server: 39.102.213.213
+  port: 8080
+  udp: true
+- name: United Kingdom_243_S70_EM
+  type: socks5
+  server: 47.237.92.86
+  port: 6379
+  udp: true
+- name: United Kingdom_244_S70_EM
+  type: socks5
+  server: 106.14.104.220
+  port: 5080
+  udp: true
+- name: France_245_S70_EF
+  type: socks5
+  server: 51.75.206.209
+  port: 80
+  udp: true
+- name: United Kingdom_246_S70_EM
+  type: socks5
+  server: 47.121.129.129
+  port: 9080
+  udp: true
+- name: United Kingdom_247_S70_EM
+  type: socks5
+  server: 47.237.107.41
+  port: 5060
+  udp: true
+- name: United Kingdom_248_S70_EM
+  type: socks5
+  server: 8.209.96.245
+  port: 7070
+  udp: true
+- name: United Kingdom_249_S70_EM
+  type: socks5
+  server: 39.102.209.163
+  port: 8090
+  udp: true
+- name: United Kingdom_250_S70_EM
+  type: socks5
+  server: 39.102.214.208
+  port: 8008
+  udp: true
+- name: United Kingdom_251_S70_EM
+  type: socks5
+  server: 47.121.133.212
+  port: 8080
+  udp: true
+- name: France_252_S70_EM
+  type: socks5
+  server: 37.187.74.125
+  port: 80
+  udp: true
+- name: United Kingdom_253_S70_EM
+  type: socks5
+  server: 47.251.73.54
+  port: 9080
+  udp: true
+- name: United Kingdom_254_S70_EM
+  type: socks5
+  server: 8.148.22.214
+  port: 20002
+  udp: true
+- name: United Kingdom_255_S70_EM
+  type: socks5
+  server: 47.116.126.57
+  port: 8443
+  udp: true
+- name: United Kingdom_256_S70_EM
+  type: socks5
+  server: 8.148.23.165
+  port: 1111
+  udp: true
+- name: United Kingdom_257_S70_EM
+  type: socks5
+  server: 47.252.11.233
+  port: 20000
+  udp: true
+- name: United Kingdom_258_S70_EM
+  type: socks5
+  server: 47.100.73.178
+  port: 45
+  udp: true
+- name: United Kingdom_259_S70_EM
+  type: socks5
+  server: 8.215.15.163
+  port: 8008
+  udp: true
+- name: United Kingdom_260_S70_EM
+  type: socks5
+  server: 8.130.37.235
+  port: 8081
+  udp: true
+- name: United Kingdom_261_S70_EM
+  type: socks5
+  server: 8.148.23.202
+  port: 9080
+  udp: true
+- name: United Kingdom_262_S70_EM
+  type: socks5
+  server: 8.138.149.37
+  port: 9080
+  udp: true
+- name: United Kingdom_263_S70_EM
+  type: socks5
+  server: 47.91.109.17
+  port: 8090
+  udp: true
+- name: United Kingdom_264_S70_EM
+  type: socks5
+  server: 121.43.154.123
+  port: 9098
+  udp: true
+- name: United Kingdom_265_S70_EM
+  type: socks5
+  server: 8.213.128.6
+  port: 7777
+  udp: true
+- name: United Kingdom_266_S70_EM
+  type: socks5
+  server: 47.250.11.111
+  port: 69
+  udp: true
+- name: United Kingdom_267_S70_EM
+  type: socks5
+  server: 39.102.214.192
+  port: 80
+  udp: true
+- name: United Kingdom_268_S70_EM
+  type: socks5
+  server: 8.211.49.86
+  port: 1081
+  udp: true
+- name: United Kingdom_269_S70_EM
+  type: socks5
+  server: 39.102.210.222
+  port: 8888
+  udp: true
+- name: United Kingdom_270_S70_EM
+  type: socks5
+  server: 47.104.27.249
+  port: 9080
+  udp: true
+- name: United Kingdom_271_S70_EM
+  type: socks5
+  server: 8.148.4.166
+  port: 9098
+  udp: true
+- name: United Kingdom_272_S70_EM
+  type: socks5
+  server: 47.250.51.110
+  port: 808
+  udp: true
+- name: United Kingdom_273_S70_EM
+  type: socks5
+  server: 39.102.208.149
+  port: 9050
+  udp: true
+- name: United Kingdom_274_S70_EM
+  type: socks5
+  server: 8.213.222.157
+  port: 8999
+  udp: true
+- name: United Kingdom_275_S70_EM
+  type: socks5
+  server: 47.250.177.202
+  port: 8081
+  udp: true
+- name: United Kingdom_276_S70_EM
+  type: socks5
+  server: 47.104.28.135
+  port: 9200
+  udp: true
+- name: United Kingdom_277_S70_EM
+  type: socks5
+  server: 8.130.71.75
+  port: 7890
+  udp: true
+- name: United Kingdom_278_S70_EM
+  type: socks5
+  server: 47.108.159.113
+  port: 4006
+  udp: true
+- name: United Kingdom_279_S70_EM
+  type: socks5
+  server: 8.210.17.35
+  port: 999
+  udp: true
+- name: United Kingdom_280_S70_EM
+  type: socks5
+  server: 47.109.110.100
+  port: 8888
+  udp: true
+- name: United Kingdom_281_S70_EM
+  type: socks5
+  server: 47.119.19.221
+  port: 8085
+  udp: true
+- name: United Kingdom_282_S70_EM
+  type: socks5
+  server: 8.221.141.88
+  port: 9080
+  udp: true
+- name: United Kingdom_283_S70_EM
+  type: socks5
+  server: 39.102.211.64
+  port: 8090
+  udp: true
+- name: United Kingdom_284_S70_EM
+  type: socks5
+  server: 8.220.136.174
+  port: 8086
+  udp: true
+- name: United Kingdom_285_S70_EM
+  type: socks5
+  server: 8.212.168.170
+  port: 80
+  udp: true
+- name: United Kingdom_286_S70_EM
+  type: socks5
+  server: 39.102.210.176
+  port: 8081
+  udp: true
+- name: United Kingdom_287_S70_EM
+  type: socks5
+  server: 39.102.211.162
+  port: 10000
+  udp: true
+- name: United Kingdom_288_S70_EM
+  type: socks5
+  server: 121.43.109.88
+  port: 8047
+  udp: true
+- name: United Kingdom_289_S70_EM
+  type: socks5
+  server: 8.148.20.126
+  port: 9098
+  udp: true
+- name: United Kingdom_290_S70_EM
+  type: socks5
+  server: 8.138.131.110
+  port: 8443
+  udp: true
+- name: United Kingdom_291_S70_EM
+  type: socks5
+  server: 39.104.27.89
+  port: 9098
+  udp: true
+- name: United Kingdom_292_S70_EM
+  type: socks5
+  server: 39.104.59.56
+  port: 8089
+  udp: true
+- name: Unknown_293_S69_UM
+  type: socks5
+  server: 80.225.224.2
+  port: 10808
+  udp: true
+- name: Unknown_294_S68_UM
+  type: socks5
+  server: 24.249.199.12
+  port: 4145
+  udp: true
+- name: Andorra_295_S68_EM
+  type: socks5
+  server: 57.128.249.250
+  port: 9052
+  udp: true
+- name: Malaysia_296_S68_EM
+  type: socks5
+  server: 219.93.101.60
+  port: 80
+  udp: true
+- name: Malaysia_297_S68_EM
+  type: socks5
+  server: 219.93.101.62
+  port: 80
+  udp: true
+- name: Malaysia_298_S68_EM
+  type: socks5
+  server: 219.93.101.63
+  port: 80
+  udp: true
+- name: China_299_S68_EM
+  type: socks5
+  server: 61.158.175.38
+  port: 9002
+  udp: true
+- name: Iraq_300_S68_TF
+  type: socks5
+  server: 185.135.69.34
+  port: 80
+  udp: true
+- name: Unknown_301_S68_UM
   type: socks5
   server: 93.100.74.173
   port: 8088
   udp: true
-- name: Unknown_406_S43_UM
+- name: Unknown_302_S68_UM
   type: socks5
-  server: 195.201.246.53
+  server: 102.209.56.21
+  port: 80
+  udp: true
+- name: India_303_S68_EM
+  type: socks5
+  server: 103.51.223.133
+  port: 8080
+  udp: true
+- name: Bulgaria_304_S68_TF
+  type: socks5
+  server: 93.123.16.38
+  port: 80
+  udp: true
+- name: United Kingdom_305_S68_EM
+  type: socks5
+  server: 47.90.167.27
+  port: 800
+  udp: true
+- name: Bangladesh_306_S68_EM
+  type: socks5
+  server: 115.127.31.66
+  port: 8080
+  udp: true
+- name: Unknown_307_S66_UM
+  type: socks5
+  server: 194.182.178.90
+  port: 3128
+  udp: true
+- name: Unknown_308_S65_UM
+  type: socks5
+  server: 47.121.182.88
+  port: 1110
+  udp: true
+- name: Unknown_309_S64_UM
+  type: socks5
+  server: 91.122.216.160
+  port: 10888
+  udp: true
+- name: Hong Kong_310_S64_EM
+  type: socks5
+  server: 172.81.111.156
+  port: 10001
+  udp: true
+- name: Unknown_311_S63_UM
+  type: socks5
+  server: 118.70.151.55
+  port: 1080
+  udp: true
+- name: Hong Kong_312_S63_EF
+  type: socks5
+  server: 218.252.100.222
+  port: 80
+  udp: true
+- name: Hong Kong_313_S63_EM
+  type: socks5
+  server: 176.111.37.5
+  port: 39811
+  udp: true
+- name: Indonesia_314_S63_EM
+  type: socks5
+  server: 103.65.237.92
+  port: 5678
+  udp: true
+- name: Cambodia_315_S63_EF
+  type: socks5
+  server: 103.118.47.205
+  port: 8080
+  udp: true
+- name: China_316_S63_EM
+  type: socks5
+  server: 39.106.170.168
+  port: 8080
+  udp: true
+- name: Senegal_317_S63_EF
+  type: socks5
+  server: 196.1.97.198
+  port: 80
+  udp: true
+- name: Ghana_318_S63_EF
+  type: socks5
+  server: 156.38.112.11
+  port: 80
+  udp: true
+- name: Unknown_319_S63_UM
+  type: socks5
+  server: 36.213.79.159
+  port: 1080
+  udp: true
+- name: Unknown_320_S63_UF
+  type: socks5
+  server: 101.251.204.174
+  port: 8080
+  udp: true
+- name: Unknown_321_S63_UM
+  type: socks5
+  server: 128.140.113.110
+  port: 5153
+  udp: true
+- name: Unknown_322_S63_UM
+  type: socks5
+  server: 47.251.74.38
+  port: 9098
+  udp: true
+- name: Unknown_323_S63_UM
+  type: socks5
+  server: 120.25.189.254
+  port: 8080
+  udp: true
+- name: Unknown_324_S63_UM
+  type: socks5
+  server: 153.72.68.0
+  port: 8081
+  udp: true
+- name: Unknown_325_S63_UM
+  type: socks5
+  server: 39.104.23.154
+  port: 8081
+  udp: true
+- name: Unknown_326_S63_UM
+  type: socks5
+  server: 39.104.57.33
+  port: 9098
+  udp: true
+- name: Unknown_327_S63_UM
+  type: socks5
+  server: 47.100.130.127
+  port: 3129
+  udp: true
+- name: Unknown_328_S63_UM
+  type: socks5
+  server: 47.91.110.148
+  port: 20
+  udp: true
+- name: Unknown_329_S63_UM
+  type: socks5
+  server: 65.108.159.129
+  port: 8081
+  udp: true
+- name: Denmark_330_S63_EF
+  type: socks5
+  server: 194.150.110.134
+  port: 80
+  udp: true
+- name: Paraguay_331_S63_EF
+  type: socks5
+  server: 190.110.226.122
+  port: 80
+  udp: true
+- name: Unknown_332_S63_UM
+  type: socks5
+  server: 102.164.252.150
+  port: 8080
+  udp: true
+- name: The Netherlands_333_S63_EM
+  type: socks5
+  server: 128.140.113.110
+  port: 3128
+  udp: true
+- name: Unknown_334_S63_UM
+  type: socks5
+  server: 47.99.112.148
+  port: 11
+  udp: true
+- name: Unknown_335_S63_UM
+  type: socks5
+  server: 47.91.115.179
+  port: 3128
+  udp: true
+- name: The Netherlands_336_S63_EM
+  type: socks5
+  server: 128.140.113.110
+  port: 1080
+  udp: true
+- name: Unknown_337_S63_UM
+  type: socks5
+  server: 39.104.69.76
+  port: 8008
+  udp: true
+- name: Unknown_338_S63_UM
+  type: socks5
+  server: 8.221.138.111
+  port: 111
+  udp: true
+- name: Unknown_339_S63_UM
+  type: socks5
+  server: 101.132.252.152
   port: 1081
   udp: true
-- name: Unknown_407_S43_UM
+- name: Unknown_340_S63_UM
   type: socks5
-  server: 203.99.54.238
+  server: 8.220.141.8
+  port: 8888
+  udp: true
+- name: Unknown_341_S63_UM
+  type: socks5
+  server: 139.196.175.68
+  port: 8080
+  udp: true
+- name: Unknown_342_S61_UM
+  type: socks5
+  server: 201.34.153.217
   port: 1080
   udp: true
-- name: Bangladesh_408_S43_EM
+- name: Unknown_343_S61_UM
   type: socks5
-  server: 103.136.107.70
+  server: 45.65.224.125
+  port: 999
+  udp: true
+- name: Singapore_344_S60_EM
+  type: socks5
+  server: 143.42.66.91
+  port: 80
+  udp: true
+- name: United Kingdom_345_S60_EM
+  type: socks5
+  server: 8.215.12.103
+  port: 8002
+  udp: true
+- name: United Kingdom_346_S60_EM
+  type: socks5
+  server: 47.238.134.126
+  port: 8443
+  udp: true
+- name: France_347_S60_EM
+  type: socks5
+  server: 163.172.53.142
+  port: 80
+  udp: true
+- name: United Kingdom_348_S60_EM
+  type: socks5
+  server: 8.211.194.78
+  port: 80
+  udp: true
+- name: United Kingdom_349_S60_EM
+  type: socks5
+  server: 47.92.194.235
   port: 1080
+  udp: true
+- name: Unknown_350_S58_UM
+  type: socks5
+  server: 103.213.97.78
+  port: 80
+  udp: true
+- name: Russia_351_S58_EM
+  type: socks5
+  server: 89.188.242.243
+  port: 80
+  udp: true
+- name: Unknown_352_S58_UM
+  type: socks5
+  server: 45.6.13.4
+  port: 1080
+  udp: true
+- name: Switzerland_353_S58_EM
+  type: socks5
+  server: 165.225.66.41
+  port: 11589
+  udp: true
+- name: Unknown_354_S58_UM
+  type: socks5
+  server: 37.187.109.70
+  port: 10111
+  udp: true
+- name: Unknown_355_S58_UM
+  type: socks5
+  server: 183.215.23.242
+  port: 9091
+  udp: true
+- name: Hong Kong_356_S53_EF
+  type: socks5
+  server: 154.209.5.66
+  port: 10804
+  udp: true
+- name: Türkiye_357_S53_EF
+  type: socks5
+  server: 193.255.128.25
+  port: 80
+  udp: true
+- name: Unknown_358_S53_UM
+  type: socks5
+  server: 27.74.14.82
+  port: 5001
+  udp: true
+- name: Unknown_359_S53_UM
+  type: socks5
+  server: 128.140.113.110
+  port: 4145
+  udp: true
+- name: Unknown_360_S53_UM
+  type: socks5
+  server: 47.89.159.212
+  port: 93
+  udp: true
+- name: Unknown_361_S53_UM
+  type: socks5
+  server: 39.102.214.152
+  port: 3333
+  udp: true
+- name: Unknown_362_S53_UM
+  type: socks5
+  server: 45.230.170.30
+  port: 999
+  udp: true
+- name: Unknown_363_S53_UM
+  type: socks5
+  server: 47.250.155.254
+  port: 3129
+  udp: true
+- name: Unknown_364_S53_UM
+  type: socks5
+  server: 20.33.10.132
+  port: 80
+  udp: true
+- name: Ecuador_365_S53_EM
+  type: socks5
+  server: 45.4.202.147
+  port: 999
+  udp: true
+- name: Unknown_366_S53_UM
+  type: socks5
+  server: 47.116.181.146
+  port: 14
+  udp: true
+- name: Colombia_367_S53_EM
+  type: socks5
+  server: 45.65.137.218
+  port: 999
+  udp: true
+- name: Hong Kong_368_S48_EM
+  type: socks5
+  server: 64.90.17.123
+  port: 555
+  udp: true
+- name: Mexico_369_S48_EM
+  type: socks5
+  server: 38.60.224.63
+  port: 1080
+  udp: true
+- name: Unknown_370_S43_UM
+  type: socks5
+  server: 47.250.159.65
+  port: 800
+  udp: true
+- name: Unknown_371_S43_UM
+  type: socks5
+  server: 182.253.42.232
+  port: 2026
+  udp: true
+- name: Unknown_372_S43_UM
+  type: socks5
+  server: 47.91.121.127
+  port: 8008
   udp: true
 proxy-groups:
 - name: 🚀 代理选择
@@ -2051,225 +1871,225 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🔰 故障转移
-  - United States_001_S95_EF
-  - United States_002_S95_EF
-  - United States_003_S95_EF
+  - Singapore_001_S95_EF
+  - Singapore_002_S95_EF
+  - Germany_003_S95_EF
   - United States_004_S95_EF
   - United States_005_S95_EF
-  - United States_006_S95_EF
-  - United States_007_S95_EF
-  - United States_008_S95_EF
-  - United States_009_S95_EF
-  - United States_010_S95_EF
-  - Germany_011_S95_EF
-  - Germany_012_S94_EF
-  - United States_013_S94_EF
-  - United States_014_S94_EF
-  - United States_015_S94_EF
-  - United States_016_S94_EF
-  - United States_017_S94_EF
-  - United States_018_S93_EF
-  - United States_019_S92_EF
-  - United States_020_S92_EF
-  - United States_021_S91_EF
-  - United States_022_S90_EF
-  - United States_023_S90_EF
-  - Singapore_024_S90_EM
-  - United States_025_S90_EF
-  - Japan_026_S89_EF
-  - United States_027_S89_EF
-  - United States_028_S89_EF
-  - United States_029_S89_EF
-  - United States_030_S89_EF
-  - United States_031_S89_EF
-  - South Korea_032_S89_EM
-  - Japan_033_S89_EF
-  - United States_034_S89_EF
-  - United States_035_S88_EF
-  - United States_036_S88_EF
-  - United States_037_S88_EF
-  - United States_038_S88_EF
-  - Ukraine_039_S88_EF
-  - United States_040_S87_EF
-  - United States_041_S87_EF
-  - United States_042_S87_EF
-  - United States_043_S87_EF
-  - United States_044_S87_EF
-  - United States_045_S87_EF
-  - United States_046_S87_EF
-  - United States_047_S87_EF
-  - United States_048_S86_EF
-  - United States_049_S86_EF
-  - United States_050_S86_EF
-  - United States_051_S86_EF
-  - United States_052_S86_EF
-  - United States_053_S86_EF
-  - United States_054_S86_EF
-  - United States_055_S86_EF
-  - United States_056_S86_EF
-  - United States_057_S86_EF
-  - United States_058_S86_EF
-  - United States_059_S86_EF
-  - United States_060_S86_EF
-  - Singapore_061_S86_EM
-  - United States_062_S86_EM
-  - Germany_063_S86_EF
-  - United States_064_S86_EF
-  - United States_065_S86_EF
-  - United States_066_S85_EF
-  - United States_067_S85_EF
-  - United States_068_S85_EF
-  - United States_069_S85_EF
-  - United States_070_S85_EF
-  - Singapore_071_S85_EM
-  - United States_072_S84_EM
-  - United States_073_S84_EF
-  - United States_074_S84_EF
-  - United States_075_S84_EF
-  - United States_076_S84_EF
-  - United States_077_S84_EF
-  - United States_078_S84_EF
-  - Unknown_079_S84_UF
-  - United States_080_S84_EM
-  - United States_081_S84_EM
-  - United States_082_S83_EF
-  - United States_083_S83_EF
-  - United States_084_S83_EF
-  - United States_085_S83_EF
-  - United States_086_S83_EF
-  - Unknown_087_S83_UF
-  - United States_088_S83_EM
-  - United States_089_S83_EF
-  - India_090_S83_EF
-  - United States_091_S82_EF
-  - United States_092_S82_EF
-  - Unknown_093_S82_UF
-  - Unknown_094_S82_UF
-  - United States_095_S81_EM
-  - United States_096_S81_EM
-  - United States_097_S81_EF
-  - United States_098_S81_EF
-  - Unknown_099_S81_UF
-  - Unknown_100_S81_UF
-  - United States_101_S80_EF
-  - United States_102_S80_EM
-  - United States_103_S80_EM
-  - United States_104_S80_EM
-  - United States_105_S80_EM
-  - United States_106_S80_EF
-  - Taiwan_107_S80_EF
-  - Taiwan_108_S80_EF
-  - Singapore_109_S80_EF
-  - Japan_110_S80_EF
-  - Japan_111_S80_EF
-  - South Korea_112_S80_EF
-  - South Korea_113_S80_EF
-  - South Korea_114_S80_EF
-  - South Korea_115_S80_EF
-  - United States_116_S80_EF
-  - Germany_117_S80_EF
-  - France_118_S80_EF
-  - United States_119_S80_EF
-  - Canada_120_S80_EF
-  - United Kingdom_121_S80_EF
-  - United Kingdom_122_S80_EM
-  - United States_123_S80_EF
-  - United States_124_S80_EF
-  - Germany_125_S80_EF
-  - United States_126_S80_EF
-  - Germany_127_S80_EF
-  - United States_128_S80_EF
-  - United States_129_S80_EF
-  - United States_130_S80_EF
-  - United States_131_S80_EF
-  - United States_132_S80_EF
-  - United States_133_S80_EF
-  - United States_134_S80_EF
-  - Germany_135_S80_EF
-  - France_136_S80_EF
-  - United States_137_S80_EF
-  - France_138_S80_EF
-  - United States_139_S80_EF
-  - Unknown_140_S79_UF
-  - United States_141_S79_EM
-  - Unknown_142_S79_UF
-  - United States_143_S78_EM
-  - United States_144_S78_EM
-  - China_145_S78_EM
-  - Unknown_146_S78_UF
-  - Unknown_147_S78_UF
-  - Unknown_148_S78_UF
-  - Unknown_149_S78_UM
-  - Unknown_150_S77_UF
-  - China_151_S77_EM
-  - India_152_S77_EM
-  - Unknown_153_S76_UF
-  - Unknown_154_S76_UF
-  - Unknown_155_S76_UF
-  - United States_156_S76_EF
-  - Unknown_157_S76_UF
-  - Unknown_158_S76_UF
-  - Unknown_159_S76_UF
-  - Hong Kong_160_S75_EM
-  - Unknown_161_S75_UF
-  - Unknown_162_S75_UF
-  - Germany_163_S75_EM
-  - France_164_S75_EM
-  - South Africa_165_S73_EF
-  - Unknown_166_S73_UF
-  - Unknown_167_S73_UM
-  - Hong Kong_168_S73_EF
-  - Hong Kong_169_S73_EF
-  - Malaysia_170_S73_EF
-  - Malaysia_171_S73_EF
-  - Indonesia_172_S73_EF
-  - China_173_S73_EF
-  - China_174_S73_EF
-  - China_175_S73_EF
-  - The Netherlands_176_S73_EF
-  - Russia_177_S73_EF
-  - Poland_178_S73_EF
-  - Russia_179_S73_EF
-  - Unknown_180_S73_UF
-  - Macao_181_S73_EF
-  - Russia_182_S73_EF
-  - Bangladesh_183_S73_EF
-  - Russia_184_S73_EF
-  - Unknown_185_S73_UF
-  - Poland_186_S73_EF
-  - Unknown_187_S73_UF
-  - Unknown_188_S73_UF
-  - Unknown_189_S73_UF
-  - Iran_190_S73_EF
-  - Russia_191_S73_EF
-  - Nigeria_192_S73_EF
-  - Sweden_193_S73_EF
-  - Unknown_194_S73_UF
-  - Russia_195_S73_EF
-  - Unknown_196_S73_UF
-  - Ecuador_197_S73_EF
-  - Unknown_198_S73_UF
-  - Unknown_199_S73_UF
-  - Unknown_200_S73_UF
-  - Brazil_201_S73_EF
-  - Unknown_202_S73_UF
-  - Unknown_203_S73_UF
-  - Unknown_204_S73_UF
-  - Unknown_205_S73_UF
-  - Poland_206_S73_EF
-  - Spain_207_S73_EF
-  - Poland_208_S73_EF
-  - Ukraine_209_S73_EF
-  - Unknown_210_S73_UF
-  - Unknown_211_S73_UF
-  - Unknown_212_S73_UF
-  - India_213_S73_EF
-  - Russia_214_S73_EF
-  - Unknown_215_S71_UM
+  - Japan_006_S94_EF
+  - South Korea_007_S94_EF
+  - United States_008_S94_EF
+  - Germany_009_S94_EF
+  - United States_010_S94_EF
+  - United States_011_S94_EF
+  - United States_012_S93_EF
+  - United Kingdom_013_S92_EF
+  - United States_014_S91_EF
+  - United States_015_S90_EF
+  - Japan_016_S89_EF
+  - United States_017_S89_EF
+  - United States_018_S88_EF
+  - Ukraine_019_S88_EF
+  - United States_020_S87_EF
+  - United States_021_S87_EF
+  - United States_022_S87_EF
+  - United States_023_S87_EF
+  - United States_024_S87_EM
+  - United States_025_S86_EF
+  - Germany_026_S86_EF
+  - Singapore_027_S86_EM
+  - United States_028_S86_EM
+  - United States_029_S86_EF
+  - Germany_030_S85_EF
+  - United Kingdom_031_S85_EM
+  - Japan_032_S84_EM
+  - United States_033_S84_EM
+  - United States_034_S84_EM
+  - United States_035_S84_EM
+  - United States_036_S84_EF
+  - Unknown_037_S84_UF
+  - United States_038_S84_EM
+  - United States_039_S83_EF
+  - United States_040_S83_EF
+  - United States_041_S83_EF
+  - United States_042_S83_EF
+  - United States_043_S83_EF
+  - United States_044_S83_EF
+  - United States_045_S83_EM
+  - United States_046_S83_EF
+  - United States_047_S83_EF
+  - United States_048_S83_EF
+  - India_049_S83_EF
+  - United States_050_S82_EM
+  - United States_051_S82_EM
+  - United States_052_S82_EF
+  - United States_053_S82_EF
+  - United States_054_S81_EM
+  - United States_055_S81_EM
+  - United States_056_S81_EM
+  - United States_057_S81_EF
+  - United States_058_S81_EM
+  - United States_059_S81_EM
+  - United States_060_S81_EM
+  - United States_061_S81_EM
+  - Hong Kong_062_S81_EM
+  - Unknown_063_S80_UF
+  - United States_064_S80_EM
+  - United States_065_S80_EM
+  - Unknown_066_S80_UM
+  - Taiwan_067_S80_EF
+  - Taiwan_068_S80_EF
+  - Singapore_069_S80_EF
+  - Japan_070_S80_EF
+  - South Korea_071_S80_EF
+  - South Korea_072_S80_EF
+  - United States_073_S80_EF
+  - United States_074_S80_EF
+  - France_075_S80_EF
+  - United States_076_S80_EF
+  - United States_077_S80_EF
+  - United States_078_S80_EF
+  - Canada_079_S80_EF
+  - United States_080_S80_EF
+  - France_081_S80_EF
+  - Germany_082_S80_EF
+  - Germany_083_S80_EF
+  - Germany_084_S80_EF
+  - United States_085_S80_EF
+  - United States_086_S80_EF
+  - United States_087_S80_EF
+  - United States_088_S80_EF
+  - United States_089_S80_EF
+  - France_090_S80_EF
+  - Unknown_091_S79_UF
+  - Unknown_092_S79_UF
+  - Unknown_093_S79_UF
+  - Unknown_094_S79_UF
+  - China_095_S78_EM
+  - Unknown_096_S78_UF
+  - Unknown_097_S78_UF
+  - Unknown_098_S78_UF
+  - Unknown_099_S78_UF
+  - United States_100_S78_EM
+  - China_101_S77_EM
+  - Unknown_102_S77_UF
+  - Unknown_103_S77_UF
+  - Unknown_104_S77_UF
+  - Unknown_105_S77_UF
+  - Unknown_106_S77_UF
+  - United States_107_S77_EM
+  - United States_108_S77_EM
+  - Switzerland_109_S77_EF
+  - Unknown_110_S76_UF
+  - Unknown_111_S76_UF
+  - Unknown_112_S76_UF
+  - United States_113_S76_EM
+  - France_114_S76_EM
+  - Switzerland_115_S76_EF
+  - Unknown_116_S76_UM
+  - Unknown_117_S76_UM
+  - Hong Kong_118_S75_EM
+  - Unknown_119_S75_UF
+  - Unknown_120_S75_UF
+  - United States_121_S75_EM
+  - Japan_122_S75_EM
+  - United Kingdom_123_S75_EM
+  - Unknown_124_S74_UM
+  - Unknown_125_S74_UF
+  - Unknown_126_S74_UF
+  - United States_127_S74_EM
+  - Unknown_128_S74_UM
+  - Unknown_129_S74_UM
+  - Unknown_130_S74_UM
+  - Unknown_131_S73_UM
+  - Hong Kong_132_S73_EF
+  - Hong Kong_133_S73_EF
+  - Hong Kong_134_S73_EF
+  - Cambodia_135_S73_EF
+  - China_136_S73_EF
+  - China_137_S73_EF
+  - China_138_S73_EF
+  - Unknown_139_S73_UF
+  - Unknown_140_S73_UF
+  - Russia_141_S73_EF
+  - Russia_142_S73_EF
+  - Ukraine_143_S73_EF
+  - Macao_144_S73_EF
+  - Unknown_145_S73_UF
+  - Russia_146_S73_EF
+  - Poland_147_S73_EF
+  - Russia_148_S73_EF
+  - Russia_149_S73_EF
+  - Iran_150_S73_EF
+  - Unknown_151_S73_UF
+  - Poland_152_S73_EF
+  - Unknown_153_S73_UF
+  - The Netherlands_154_S73_EF
+  - Poland_155_S73_EF
+  - Unknown_156_S73_UF
+  - Brazil_157_S73_EF
+  - Egypt_158_S73_EF
+  - Senegal_159_S73_EF
+  - Senegal_160_S73_EF
+  - India_161_S73_EF
+  - Nigeria_162_S73_EF
+  - Spain_163_S73_EF
+  - Unknown_164_S73_UF
+  - Russia_165_S73_EF
+  - Poland_166_S73_EF
+  - Italy_167_S73_EF
+  - Unknown_168_S73_UF
+  - Unknown_169_S73_UF
+  - Ecuador_170_S73_EF
+  - Unknown_171_S73_UF
+  - Unknown_172_S73_UF
+  - Unknown_173_S73_UF
+  - United Kingdom_174_S72_EM
+  - Hong Kong_175_S72_EM
+  - Unknown_176_S72_UM
+  - Unknown_177_S71_UM
+  - Türkiye_178_S71_EF
+  - Russia_179_S71_EM
+  - Unknown_180_S71_UM
+  - Unknown_181_S70_UM
+  - Taiwan_182_S70_EF
+  - Singapore_183_S70_EF
+  - South Korea_184_S70_EM
+  - South Korea_185_S70_EF
+  - United States_186_S70_EM
+  - United States_187_S70_EM
+  - United Kingdom_188_S70_EM
+  - United Kingdom_189_S70_EM
+  - United Kingdom_190_S70_EM
+  - United Kingdom_191_S70_EM
+  - United Kingdom_192_S70_EM
+  - United Kingdom_193_S70_EM
+  - United Kingdom_194_S70_EM
+  - United Kingdom_195_S70_EM
+  - United Kingdom_196_S70_EM
+  - United Kingdom_197_S70_EM
+  - United Kingdom_198_S70_EM
+  - United Kingdom_199_S70_EM
+  - United Kingdom_200_S70_EM
+  - United Kingdom_201_S70_EM
+  - United Kingdom_202_S70_EM
+  - United Kingdom_203_S70_EM
+  - United Kingdom_204_S70_EM
+  - United Kingdom_205_S70_EM
+  - United Kingdom_206_S70_EM
+  - United Kingdom_207_S70_EM
+  - United Kingdom_208_S70_EM
+  - United Kingdom_209_S70_EM
+  - United Kingdom_210_S70_EM
+  - United Kingdom_211_S70_EM
+  - United Kingdom_212_S70_EM
+  - United Kingdom_213_S70_EM
+  - United Kingdom_214_S70_EM
+  - United Kingdom_215_S70_EM
   - United Kingdom_216_S70_EM
   - United Kingdom_217_S70_EM
   - United Kingdom_218_S70_EM
-  - United Kingdom_219_S70_EM
+  - United States_219_S70_EM
   - United Kingdom_220_S70_EM
   - United Kingdom_221_S70_EM
   - United Kingdom_222_S70_EM
@@ -2284,10 +2104,10 @@ proxy-groups:
   - United Kingdom_231_S70_EM
   - United Kingdom_232_S70_EM
   - United Kingdom_233_S70_EM
-  - United Kingdom_234_S70_EM
+  - United States_234_S70_EM
   - United Kingdom_235_S70_EM
   - United Kingdom_236_S70_EM
-  - United Kingdom_237_S70_EM
+  - United States_237_S70_EM
   - United Kingdom_238_S70_EM
   - United Kingdom_239_S70_EM
   - United Kingdom_240_S70_EM
@@ -2295,14 +2115,14 @@ proxy-groups:
   - United Kingdom_242_S70_EM
   - United Kingdom_243_S70_EM
   - United Kingdom_244_S70_EM
-  - United Kingdom_245_S70_EM
+  - France_245_S70_EF
   - United Kingdom_246_S70_EM
   - United Kingdom_247_S70_EM
   - United Kingdom_248_S70_EM
   - United Kingdom_249_S70_EM
   - United Kingdom_250_S70_EM
   - United Kingdom_251_S70_EM
-  - United Kingdom_252_S70_EM
+  - France_252_S70_EM
   - United Kingdom_253_S70_EM
   - United Kingdom_254_S70_EM
   - United Kingdom_255_S70_EM
@@ -2343,344 +2163,308 @@ proxy-groups:
   - United Kingdom_290_S70_EM
   - United Kingdom_291_S70_EM
   - United Kingdom_292_S70_EM
-  - United Kingdom_293_S70_EM
-  - United Kingdom_294_S70_EM
-  - United Kingdom_295_S70_EM
-  - United Kingdom_296_S70_EM
-  - United Kingdom_297_S70_EM
-  - United Kingdom_298_S70_EM
-  - United Kingdom_299_S70_EM
-  - United Kingdom_300_S70_EM
-  - United Kingdom_301_S70_EM
-  - United Kingdom_302_S70_EM
-  - United Kingdom_303_S70_EM
-  - United Kingdom_304_S70_EM
-  - United Kingdom_305_S70_EM
-  - United Kingdom_306_S70_EM
-  - United Kingdom_307_S70_EM
-  - Germany_308_S70_EM
-  - United Kingdom_309_S70_EM
-  - United Kingdom_310_S70_EM
-  - United Kingdom_311_S70_EM
-  - United Kingdom_312_S70_EM
-  - United Kingdom_313_S70_EM
-  - United Kingdom_314_S70_EM
-  - United Kingdom_315_S70_EM
-  - United Kingdom_316_S70_EM
-  - United Kingdom_317_S70_EM
-  - United Kingdom_318_S70_EM
-  - United Kingdom_319_S70_EM
-  - United Kingdom_320_S70_EM
-  - United Kingdom_321_S70_EM
-  - United Kingdom_322_S70_EM
-  - United Kingdom_323_S70_EM
-  - United Kingdom_324_S70_EM
-  - United Kingdom_325_S70_EM
-  - United Kingdom_326_S70_EM
-  - United Kingdom_327_S70_EM
-  - United Kingdom_328_S70_EM
-  - United Kingdom_329_S70_EM
-  - United Kingdom_330_S70_EM
-  - United Kingdom_331_S70_EM
-  - United Kingdom_332_S70_EM
-  - United Kingdom_333_S70_EM
-  - United Kingdom_334_S70_EM
-  - United Kingdom_335_S70_EM
-  - United Kingdom_336_S70_EM
-  - United Kingdom_337_S70_EM
-  - United Kingdom_338_S70_EM
-  - United Kingdom_339_S70_EM
-  - United Kingdom_340_S70_EM
-  - United Kingdom_341_S70_EM
-  - United Kingdom_342_S70_EM
-  - United Kingdom_343_S70_EM
-  - United Kingdom_344_S70_EM
-  - United Kingdom_345_S70_EM
-  - United Kingdom_346_S70_EM
-  - United Kingdom_347_S70_EM
-  - United Kingdom_348_S70_EM
-  - Unknown_349_S69_UF
-  - Hong Kong_350_S68_EM
-  - Hong Kong_351_S68_EM
-  - Malaysia_352_S68_EM
-  - Indonesia_353_S68_EM
-  - Cambodia_354_S68_EM
-  - Cambodia_355_S68_EM
-  - Russia_356_S68_EM
-  - Iraq_357_S68_TF
-  - Unknown_358_S68_UM
-  - Senegal_359_S68_EM
-  - Italy_360_S68_EM
-  - Bulgaria_361_S68_TF
-  - Unknown_362_S68_UM
-  - India_363_S68_EM
-  - Denmark_364_S68_EM
-  - The Netherlands_365_S68_EM
-  - Unknown_366_S68_UM
-  - Unknown_367_S67_UM
-  - Unknown_368_S66_UM
-  - Hong Kong_369_S65_EM
-  - United Kingdom_370_S65_EM
-  - Unknown_371_S64_UM
-  - Hong Kong_372_S63_EM
-  - The Netherlands_373_S63_EM
-  - Unknown_374_S63_UM
-  - Unknown_375_S63_UM
-  - Unknown_376_S63_UM
-  - Unknown_377_S63_UF
-  - Unknown_378_S63_UM
-  - Unknown_379_S63_UM
-  - The Netherlands_380_S63_EM
-  - Unknown_381_S63_UM
-  - Unknown_382_S63_UM
-  - Unknown_383_S63_UM
-  - Unknown_384_S63_UM
-  - Unknown_385_S63_UM
-  - Unknown_386_S63_UM
-  - The Netherlands_387_S63_EM
-  - Unknown_388_S63_UM
-  - Unknown_389_S63_UM
-  - Unknown_390_S63_UM
-  - Unknown_391_S59_UM
-  - United States_392_S55_EM
-  - United States_393_S55_EM
-  - United States_394_S55_EM
-  - Unknown_395_S53_UM
-  - Unknown_396_S53_UF
-  - France_397_S50_EM
-  - United Kingdom_398_S50_EM
-  - United Kingdom_399_S50_EM
-  - Unknown_400_S48_UM
-  - Chile_401_S48_EM
-  - Unknown_402_S48_UM
-  - Unknown_403_S48_UM
-  - India_404_S48_EM
-  - Romania_405_S48_EM
-  - Unknown_406_S43_UM
-  - Unknown_407_S43_UM
-  - Bangladesh_408_S43_EM
+  - Unknown_293_S69_UM
+  - Unknown_294_S68_UM
+  - Andorra_295_S68_EM
+  - Malaysia_296_S68_EM
+  - Malaysia_297_S68_EM
+  - Malaysia_298_S68_EM
+  - China_299_S68_EM
+  - Iraq_300_S68_TF
+  - Unknown_301_S68_UM
+  - Unknown_302_S68_UM
+  - India_303_S68_EM
+  - Bulgaria_304_S68_TF
+  - United Kingdom_305_S68_EM
+  - Bangladesh_306_S68_EM
+  - Unknown_307_S66_UM
+  - Unknown_308_S65_UM
+  - Unknown_309_S64_UM
+  - Hong Kong_310_S64_EM
+  - Unknown_311_S63_UM
+  - Hong Kong_312_S63_EF
+  - Hong Kong_313_S63_EM
+  - Indonesia_314_S63_EM
+  - Cambodia_315_S63_EF
+  - China_316_S63_EM
+  - Senegal_317_S63_EF
+  - Ghana_318_S63_EF
+  - Unknown_319_S63_UM
+  - Unknown_320_S63_UF
+  - Unknown_321_S63_UM
+  - Unknown_322_S63_UM
+  - Unknown_323_S63_UM
+  - Unknown_324_S63_UM
+  - Unknown_325_S63_UM
+  - Unknown_326_S63_UM
+  - Unknown_327_S63_UM
+  - Unknown_328_S63_UM
+  - Unknown_329_S63_UM
+  - Denmark_330_S63_EF
+  - Paraguay_331_S63_EF
+  - Unknown_332_S63_UM
+  - The Netherlands_333_S63_EM
+  - Unknown_334_S63_UM
+  - Unknown_335_S63_UM
+  - The Netherlands_336_S63_EM
+  - Unknown_337_S63_UM
+  - Unknown_338_S63_UM
+  - Unknown_339_S63_UM
+  - Unknown_340_S63_UM
+  - Unknown_341_S63_UM
+  - Unknown_342_S61_UM
+  - Unknown_343_S61_UM
+  - Singapore_344_S60_EM
+  - United Kingdom_345_S60_EM
+  - United Kingdom_346_S60_EM
+  - France_347_S60_EM
+  - United Kingdom_348_S60_EM
+  - United Kingdom_349_S60_EM
+  - Unknown_350_S58_UM
+  - Russia_351_S58_EM
+  - Unknown_352_S58_UM
+  - Switzerland_353_S58_EM
+  - Unknown_354_S58_UM
+  - Unknown_355_S58_UM
+  - Hong Kong_356_S53_EF
+  - Türkiye_357_S53_EF
+  - Unknown_358_S53_UM
+  - Unknown_359_S53_UM
+  - Unknown_360_S53_UM
+  - Unknown_361_S53_UM
+  - Unknown_362_S53_UM
+  - Unknown_363_S53_UM
+  - Unknown_364_S53_UM
+  - Ecuador_365_S53_EM
+  - Unknown_366_S53_UM
+  - Colombia_367_S53_EM
+  - Hong Kong_368_S48_EM
+  - Mexico_369_S48_EM
+  - Unknown_370_S43_UM
+  - Unknown_371_S43_UM
+  - Unknown_372_S43_UM
 - name: ♻️ 自动选择
   type: url-test
   proxies: &id001
-  - United States_001_S95_EF
-  - United States_002_S95_EF
-  - United States_003_S95_EF
+  - Singapore_001_S95_EF
+  - Singapore_002_S95_EF
+  - Germany_003_S95_EF
   - United States_004_S95_EF
   - United States_005_S95_EF
-  - United States_006_S95_EF
-  - United States_007_S95_EF
-  - United States_008_S95_EF
-  - United States_009_S95_EF
-  - United States_010_S95_EF
-  - Germany_011_S95_EF
-  - Germany_012_S94_EF
-  - United States_013_S94_EF
-  - United States_014_S94_EF
-  - United States_015_S94_EF
-  - United States_016_S94_EF
-  - United States_017_S94_EF
-  - United States_018_S93_EF
-  - United States_019_S92_EF
-  - United States_020_S92_EF
-  - United States_021_S91_EF
-  - United States_022_S90_EF
-  - United States_023_S90_EF
-  - Singapore_024_S90_EM
-  - United States_025_S90_EF
-  - Japan_026_S89_EF
-  - United States_027_S89_EF
-  - United States_028_S89_EF
-  - United States_029_S89_EF
-  - United States_030_S89_EF
-  - United States_031_S89_EF
-  - South Korea_032_S89_EM
-  - Japan_033_S89_EF
-  - United States_034_S89_EF
-  - United States_035_S88_EF
-  - United States_036_S88_EF
-  - United States_037_S88_EF
-  - United States_038_S88_EF
-  - Ukraine_039_S88_EF
-  - United States_040_S87_EF
-  - United States_041_S87_EF
-  - United States_042_S87_EF
-  - United States_043_S87_EF
-  - United States_044_S87_EF
-  - United States_045_S87_EF
-  - United States_046_S87_EF
-  - United States_047_S87_EF
-  - United States_048_S86_EF
-  - United States_049_S86_EF
-  - United States_050_S86_EF
-  - United States_051_S86_EF
-  - United States_052_S86_EF
-  - United States_053_S86_EF
-  - United States_054_S86_EF
-  - United States_055_S86_EF
-  - United States_056_S86_EF
-  - United States_057_S86_EF
-  - United States_058_S86_EF
-  - United States_059_S86_EF
-  - United States_060_S86_EF
-  - Singapore_061_S86_EM
-  - United States_062_S86_EM
-  - Germany_063_S86_EF
-  - United States_064_S86_EF
-  - United States_065_S86_EF
-  - United States_066_S85_EF
-  - United States_067_S85_EF
-  - United States_068_S85_EF
-  - United States_069_S85_EF
-  - United States_070_S85_EF
-  - Singapore_071_S85_EM
-  - United States_072_S84_EM
-  - United States_073_S84_EF
-  - United States_074_S84_EF
-  - United States_075_S84_EF
-  - United States_076_S84_EF
-  - United States_077_S84_EF
-  - United States_078_S84_EF
-  - Unknown_079_S84_UF
-  - United States_080_S84_EM
-  - United States_081_S84_EM
-  - United States_082_S83_EF
-  - United States_083_S83_EF
-  - United States_084_S83_EF
-  - United States_085_S83_EF
-  - United States_086_S83_EF
-  - Unknown_087_S83_UF
-  - United States_088_S83_EM
-  - United States_089_S83_EF
-  - India_090_S83_EF
-  - United States_091_S82_EF
-  - United States_092_S82_EF
-  - Unknown_093_S82_UF
-  - Unknown_094_S82_UF
-  - United States_095_S81_EM
-  - United States_096_S81_EM
-  - United States_097_S81_EF
-  - United States_098_S81_EF
-  - Unknown_099_S81_UF
-  - Unknown_100_S81_UF
-  - United States_101_S80_EF
-  - United States_102_S80_EM
-  - United States_103_S80_EM
-  - United States_104_S80_EM
-  - United States_105_S80_EM
-  - United States_106_S80_EF
-  - Taiwan_107_S80_EF
-  - Taiwan_108_S80_EF
-  - Singapore_109_S80_EF
-  - Japan_110_S80_EF
-  - Japan_111_S80_EF
-  - South Korea_112_S80_EF
-  - South Korea_113_S80_EF
-  - South Korea_114_S80_EF
-  - South Korea_115_S80_EF
-  - United States_116_S80_EF
-  - Germany_117_S80_EF
-  - France_118_S80_EF
-  - United States_119_S80_EF
-  - Canada_120_S80_EF
-  - United Kingdom_121_S80_EF
-  - United Kingdom_122_S80_EM
-  - United States_123_S80_EF
-  - United States_124_S80_EF
-  - Germany_125_S80_EF
-  - United States_126_S80_EF
-  - Germany_127_S80_EF
-  - United States_128_S80_EF
-  - United States_129_S80_EF
-  - United States_130_S80_EF
-  - United States_131_S80_EF
-  - United States_132_S80_EF
-  - United States_133_S80_EF
-  - United States_134_S80_EF
-  - Germany_135_S80_EF
-  - France_136_S80_EF
-  - United States_137_S80_EF
-  - France_138_S80_EF
-  - United States_139_S80_EF
-  - Unknown_140_S79_UF
-  - United States_141_S79_EM
-  - Unknown_142_S79_UF
-  - United States_143_S78_EM
-  - United States_144_S78_EM
-  - China_145_S78_EM
-  - Unknown_146_S78_UF
-  - Unknown_147_S78_UF
-  - Unknown_148_S78_UF
-  - Unknown_149_S78_UM
-  - Unknown_150_S77_UF
-  - China_151_S77_EM
-  - India_152_S77_EM
-  - Unknown_153_S76_UF
-  - Unknown_154_S76_UF
-  - Unknown_155_S76_UF
-  - United States_156_S76_EF
-  - Unknown_157_S76_UF
-  - Unknown_158_S76_UF
-  - Unknown_159_S76_UF
-  - Hong Kong_160_S75_EM
-  - Unknown_161_S75_UF
-  - Unknown_162_S75_UF
-  - Germany_163_S75_EM
-  - France_164_S75_EM
-  - South Africa_165_S73_EF
-  - Unknown_166_S73_UF
-  - Unknown_167_S73_UM
-  - Hong Kong_168_S73_EF
-  - Hong Kong_169_S73_EF
-  - Malaysia_170_S73_EF
-  - Malaysia_171_S73_EF
-  - Indonesia_172_S73_EF
-  - China_173_S73_EF
-  - China_174_S73_EF
-  - China_175_S73_EF
-  - The Netherlands_176_S73_EF
-  - Russia_177_S73_EF
-  - Poland_178_S73_EF
-  - Russia_179_S73_EF
-  - Unknown_180_S73_UF
-  - Macao_181_S73_EF
-  - Russia_182_S73_EF
-  - Bangladesh_183_S73_EF
-  - Russia_184_S73_EF
-  - Unknown_185_S73_UF
-  - Poland_186_S73_EF
-  - Unknown_187_S73_UF
-  - Unknown_188_S73_UF
-  - Unknown_189_S73_UF
-  - Iran_190_S73_EF
-  - Russia_191_S73_EF
-  - Nigeria_192_S73_EF
-  - Sweden_193_S73_EF
-  - Unknown_194_S73_UF
-  - Russia_195_S73_EF
-  - Unknown_196_S73_UF
-  - Ecuador_197_S73_EF
-  - Unknown_198_S73_UF
-  - Unknown_199_S73_UF
-  - Unknown_200_S73_UF
-  - Brazil_201_S73_EF
-  - Unknown_202_S73_UF
-  - Unknown_203_S73_UF
-  - Unknown_204_S73_UF
-  - Unknown_205_S73_UF
-  - Poland_206_S73_EF
-  - Spain_207_S73_EF
-  - Poland_208_S73_EF
-  - Ukraine_209_S73_EF
-  - Unknown_210_S73_UF
-  - Unknown_211_S73_UF
-  - Unknown_212_S73_UF
-  - India_213_S73_EF
-  - Russia_214_S73_EF
-  - Unknown_215_S71_UM
+  - Japan_006_S94_EF
+  - South Korea_007_S94_EF
+  - United States_008_S94_EF
+  - Germany_009_S94_EF
+  - United States_010_S94_EF
+  - United States_011_S94_EF
+  - United States_012_S93_EF
+  - United Kingdom_013_S92_EF
+  - United States_014_S91_EF
+  - United States_015_S90_EF
+  - Japan_016_S89_EF
+  - United States_017_S89_EF
+  - United States_018_S88_EF
+  - Ukraine_019_S88_EF
+  - United States_020_S87_EF
+  - United States_021_S87_EF
+  - United States_022_S87_EF
+  - United States_023_S87_EF
+  - United States_024_S87_EM
+  - United States_025_S86_EF
+  - Germany_026_S86_EF
+  - Singapore_027_S86_EM
+  - United States_028_S86_EM
+  - United States_029_S86_EF
+  - Germany_030_S85_EF
+  - United Kingdom_031_S85_EM
+  - Japan_032_S84_EM
+  - United States_033_S84_EM
+  - United States_034_S84_EM
+  - United States_035_S84_EM
+  - United States_036_S84_EF
+  - Unknown_037_S84_UF
+  - United States_038_S84_EM
+  - United States_039_S83_EF
+  - United States_040_S83_EF
+  - United States_041_S83_EF
+  - United States_042_S83_EF
+  - United States_043_S83_EF
+  - United States_044_S83_EF
+  - United States_045_S83_EM
+  - United States_046_S83_EF
+  - United States_047_S83_EF
+  - United States_048_S83_EF
+  - India_049_S83_EF
+  - United States_050_S82_EM
+  - United States_051_S82_EM
+  - United States_052_S82_EF
+  - United States_053_S82_EF
+  - United States_054_S81_EM
+  - United States_055_S81_EM
+  - United States_056_S81_EM
+  - United States_057_S81_EF
+  - United States_058_S81_EM
+  - United States_059_S81_EM
+  - United States_060_S81_EM
+  - United States_061_S81_EM
+  - Hong Kong_062_S81_EM
+  - Unknown_063_S80_UF
+  - United States_064_S80_EM
+  - United States_065_S80_EM
+  - Unknown_066_S80_UM
+  - Taiwan_067_S80_EF
+  - Taiwan_068_S80_EF
+  - Singapore_069_S80_EF
+  - Japan_070_S80_EF
+  - South Korea_071_S80_EF
+  - South Korea_072_S80_EF
+  - United States_073_S80_EF
+  - United States_074_S80_EF
+  - France_075_S80_EF
+  - United States_076_S80_EF
+  - United States_077_S80_EF
+  - United States_078_S80_EF
+  - Canada_079_S80_EF
+  - United States_080_S80_EF
+  - France_081_S80_EF
+  - Germany_082_S80_EF
+  - Germany_083_S80_EF
+  - Germany_084_S80_EF
+  - United States_085_S80_EF
+  - United States_086_S80_EF
+  - United States_087_S80_EF
+  - United States_088_S80_EF
+  - United States_089_S80_EF
+  - France_090_S80_EF
+  - Unknown_091_S79_UF
+  - Unknown_092_S79_UF
+  - Unknown_093_S79_UF
+  - Unknown_094_S79_UF
+  - China_095_S78_EM
+  - Unknown_096_S78_UF
+  - Unknown_097_S78_UF
+  - Unknown_098_S78_UF
+  - Unknown_099_S78_UF
+  - United States_100_S78_EM
+  - China_101_S77_EM
+  - Unknown_102_S77_UF
+  - Unknown_103_S77_UF
+  - Unknown_104_S77_UF
+  - Unknown_105_S77_UF
+  - Unknown_106_S77_UF
+  - United States_107_S77_EM
+  - United States_108_S77_EM
+  - Switzerland_109_S77_EF
+  - Unknown_110_S76_UF
+  - Unknown_111_S76_UF
+  - Unknown_112_S76_UF
+  - United States_113_S76_EM
+  - France_114_S76_EM
+  - Switzerland_115_S76_EF
+  - Unknown_116_S76_UM
+  - Unknown_117_S76_UM
+  - Hong Kong_118_S75_EM
+  - Unknown_119_S75_UF
+  - Unknown_120_S75_UF
+  - United States_121_S75_EM
+  - Japan_122_S75_EM
+  - United Kingdom_123_S75_EM
+  - Unknown_124_S74_UM
+  - Unknown_125_S74_UF
+  - Unknown_126_S74_UF
+  - United States_127_S74_EM
+  - Unknown_128_S74_UM
+  - Unknown_129_S74_UM
+  - Unknown_130_S74_UM
+  - Unknown_131_S73_UM
+  - Hong Kong_132_S73_EF
+  - Hong Kong_133_S73_EF
+  - Hong Kong_134_S73_EF
+  - Cambodia_135_S73_EF
+  - China_136_S73_EF
+  - China_137_S73_EF
+  - China_138_S73_EF
+  - Unknown_139_S73_UF
+  - Unknown_140_S73_UF
+  - Russia_141_S73_EF
+  - Russia_142_S73_EF
+  - Ukraine_143_S73_EF
+  - Macao_144_S73_EF
+  - Unknown_145_S73_UF
+  - Russia_146_S73_EF
+  - Poland_147_S73_EF
+  - Russia_148_S73_EF
+  - Russia_149_S73_EF
+  - Iran_150_S73_EF
+  - Unknown_151_S73_UF
+  - Poland_152_S73_EF
+  - Unknown_153_S73_UF
+  - The Netherlands_154_S73_EF
+  - Poland_155_S73_EF
+  - Unknown_156_S73_UF
+  - Brazil_157_S73_EF
+  - Egypt_158_S73_EF
+  - Senegal_159_S73_EF
+  - Senegal_160_S73_EF
+  - India_161_S73_EF
+  - Nigeria_162_S73_EF
+  - Spain_163_S73_EF
+  - Unknown_164_S73_UF
+  - Russia_165_S73_EF
+  - Poland_166_S73_EF
+  - Italy_167_S73_EF
+  - Unknown_168_S73_UF
+  - Unknown_169_S73_UF
+  - Ecuador_170_S73_EF
+  - Unknown_171_S73_UF
+  - Unknown_172_S73_UF
+  - Unknown_173_S73_UF
+  - United Kingdom_174_S72_EM
+  - Hong Kong_175_S72_EM
+  - Unknown_176_S72_UM
+  - Unknown_177_S71_UM
+  - Türkiye_178_S71_EF
+  - Russia_179_S71_EM
+  - Unknown_180_S71_UM
+  - Unknown_181_S70_UM
+  - Taiwan_182_S70_EF
+  - Singapore_183_S70_EF
+  - South Korea_184_S70_EM
+  - South Korea_185_S70_EF
+  - United States_186_S70_EM
+  - United States_187_S70_EM
+  - United Kingdom_188_S70_EM
+  - United Kingdom_189_S70_EM
+  - United Kingdom_190_S70_EM
+  - United Kingdom_191_S70_EM
+  - United Kingdom_192_S70_EM
+  - United Kingdom_193_S70_EM
+  - United Kingdom_194_S70_EM
+  - United Kingdom_195_S70_EM
+  - United Kingdom_196_S70_EM
+  - United Kingdom_197_S70_EM
+  - United Kingdom_198_S70_EM
+  - United Kingdom_199_S70_EM
+  - United Kingdom_200_S70_EM
+  - United Kingdom_201_S70_EM
+  - United Kingdom_202_S70_EM
+  - United Kingdom_203_S70_EM
+  - United Kingdom_204_S70_EM
+  - United Kingdom_205_S70_EM
+  - United Kingdom_206_S70_EM
+  - United Kingdom_207_S70_EM
+  - United Kingdom_208_S70_EM
+  - United Kingdom_209_S70_EM
+  - United Kingdom_210_S70_EM
+  - United Kingdom_211_S70_EM
+  - United Kingdom_212_S70_EM
+  - United Kingdom_213_S70_EM
+  - United Kingdom_214_S70_EM
+  - United Kingdom_215_S70_EM
   - United Kingdom_216_S70_EM
   - United Kingdom_217_S70_EM
   - United Kingdom_218_S70_EM
-  - United Kingdom_219_S70_EM
+  - United States_219_S70_EM
   - United Kingdom_220_S70_EM
   - United Kingdom_221_S70_EM
   - United Kingdom_222_S70_EM
@@ -2695,10 +2479,10 @@ proxy-groups:
   - United Kingdom_231_S70_EM
   - United Kingdom_232_S70_EM
   - United Kingdom_233_S70_EM
-  - United Kingdom_234_S70_EM
+  - United States_234_S70_EM
   - United Kingdom_235_S70_EM
   - United Kingdom_236_S70_EM
-  - United Kingdom_237_S70_EM
+  - United States_237_S70_EM
   - United Kingdom_238_S70_EM
   - United Kingdom_239_S70_EM
   - United Kingdom_240_S70_EM
@@ -2706,14 +2490,14 @@ proxy-groups:
   - United Kingdom_242_S70_EM
   - United Kingdom_243_S70_EM
   - United Kingdom_244_S70_EM
-  - United Kingdom_245_S70_EM
+  - France_245_S70_EF
   - United Kingdom_246_S70_EM
   - United Kingdom_247_S70_EM
   - United Kingdom_248_S70_EM
   - United Kingdom_249_S70_EM
   - United Kingdom_250_S70_EM
   - United Kingdom_251_S70_EM
-  - United Kingdom_252_S70_EM
+  - France_252_S70_EM
   - United Kingdom_253_S70_EM
   - United Kingdom_254_S70_EM
   - United Kingdom_255_S70_EM
@@ -2754,122 +2538,86 @@ proxy-groups:
   - United Kingdom_290_S70_EM
   - United Kingdom_291_S70_EM
   - United Kingdom_292_S70_EM
-  - United Kingdom_293_S70_EM
-  - United Kingdom_294_S70_EM
-  - United Kingdom_295_S70_EM
-  - United Kingdom_296_S70_EM
-  - United Kingdom_297_S70_EM
-  - United Kingdom_298_S70_EM
-  - United Kingdom_299_S70_EM
-  - United Kingdom_300_S70_EM
-  - United Kingdom_301_S70_EM
-  - United Kingdom_302_S70_EM
-  - United Kingdom_303_S70_EM
-  - United Kingdom_304_S70_EM
-  - United Kingdom_305_S70_EM
-  - United Kingdom_306_S70_EM
-  - United Kingdom_307_S70_EM
-  - Germany_308_S70_EM
-  - United Kingdom_309_S70_EM
-  - United Kingdom_310_S70_EM
-  - United Kingdom_311_S70_EM
-  - United Kingdom_312_S70_EM
-  - United Kingdom_313_S70_EM
-  - United Kingdom_314_S70_EM
-  - United Kingdom_315_S70_EM
-  - United Kingdom_316_S70_EM
-  - United Kingdom_317_S70_EM
-  - United Kingdom_318_S70_EM
-  - United Kingdom_319_S70_EM
-  - United Kingdom_320_S70_EM
-  - United Kingdom_321_S70_EM
-  - United Kingdom_322_S70_EM
-  - United Kingdom_323_S70_EM
-  - United Kingdom_324_S70_EM
-  - United Kingdom_325_S70_EM
-  - United Kingdom_326_S70_EM
-  - United Kingdom_327_S70_EM
-  - United Kingdom_328_S70_EM
-  - United Kingdom_329_S70_EM
-  - United Kingdom_330_S70_EM
-  - United Kingdom_331_S70_EM
-  - United Kingdom_332_S70_EM
-  - United Kingdom_333_S70_EM
-  - United Kingdom_334_S70_EM
-  - United Kingdom_335_S70_EM
-  - United Kingdom_336_S70_EM
-  - United Kingdom_337_S70_EM
-  - United Kingdom_338_S70_EM
-  - United Kingdom_339_S70_EM
-  - United Kingdom_340_S70_EM
-  - United Kingdom_341_S70_EM
-  - United Kingdom_342_S70_EM
-  - United Kingdom_343_S70_EM
-  - United Kingdom_344_S70_EM
-  - United Kingdom_345_S70_EM
-  - United Kingdom_346_S70_EM
-  - United Kingdom_347_S70_EM
-  - United Kingdom_348_S70_EM
-  - Unknown_349_S69_UF
-  - Hong Kong_350_S68_EM
-  - Hong Kong_351_S68_EM
-  - Malaysia_352_S68_EM
-  - Indonesia_353_S68_EM
-  - Cambodia_354_S68_EM
-  - Cambodia_355_S68_EM
-  - Russia_356_S68_EM
-  - Iraq_357_S68_TF
-  - Unknown_358_S68_UM
-  - Senegal_359_S68_EM
-  - Italy_360_S68_EM
-  - Bulgaria_361_S68_TF
-  - Unknown_362_S68_UM
-  - India_363_S68_EM
-  - Denmark_364_S68_EM
-  - The Netherlands_365_S68_EM
-  - Unknown_366_S68_UM
-  - Unknown_367_S67_UM
-  - Unknown_368_S66_UM
-  - Hong Kong_369_S65_EM
-  - United Kingdom_370_S65_EM
-  - Unknown_371_S64_UM
-  - Hong Kong_372_S63_EM
-  - The Netherlands_373_S63_EM
-  - Unknown_374_S63_UM
-  - Unknown_375_S63_UM
-  - Unknown_376_S63_UM
-  - Unknown_377_S63_UF
-  - Unknown_378_S63_UM
-  - Unknown_379_S63_UM
-  - The Netherlands_380_S63_EM
-  - Unknown_381_S63_UM
-  - Unknown_382_S63_UM
-  - Unknown_383_S63_UM
-  - Unknown_384_S63_UM
-  - Unknown_385_S63_UM
-  - Unknown_386_S63_UM
-  - The Netherlands_387_S63_EM
-  - Unknown_388_S63_UM
-  - Unknown_389_S63_UM
-  - Unknown_390_S63_UM
-  - Unknown_391_S59_UM
-  - United States_392_S55_EM
-  - United States_393_S55_EM
-  - United States_394_S55_EM
-  - Unknown_395_S53_UM
-  - Unknown_396_S53_UF
-  - France_397_S50_EM
-  - United Kingdom_398_S50_EM
-  - United Kingdom_399_S50_EM
-  - Unknown_400_S48_UM
-  - Chile_401_S48_EM
-  - Unknown_402_S48_UM
-  - Unknown_403_S48_UM
-  - India_404_S48_EM
-  - Romania_405_S48_EM
-  - Unknown_406_S43_UM
-  - Unknown_407_S43_UM
-  - Bangladesh_408_S43_EM
+  - Unknown_293_S69_UM
+  - Unknown_294_S68_UM
+  - Andorra_295_S68_EM
+  - Malaysia_296_S68_EM
+  - Malaysia_297_S68_EM
+  - Malaysia_298_S68_EM
+  - China_299_S68_EM
+  - Iraq_300_S68_TF
+  - Unknown_301_S68_UM
+  - Unknown_302_S68_UM
+  - India_303_S68_EM
+  - Bulgaria_304_S68_TF
+  - United Kingdom_305_S68_EM
+  - Bangladesh_306_S68_EM
+  - Unknown_307_S66_UM
+  - Unknown_308_S65_UM
+  - Unknown_309_S64_UM
+  - Hong Kong_310_S64_EM
+  - Unknown_311_S63_UM
+  - Hong Kong_312_S63_EF
+  - Hong Kong_313_S63_EM
+  - Indonesia_314_S63_EM
+  - Cambodia_315_S63_EF
+  - China_316_S63_EM
+  - Senegal_317_S63_EF
+  - Ghana_318_S63_EF
+  - Unknown_319_S63_UM
+  - Unknown_320_S63_UF
+  - Unknown_321_S63_UM
+  - Unknown_322_S63_UM
+  - Unknown_323_S63_UM
+  - Unknown_324_S63_UM
+  - Unknown_325_S63_UM
+  - Unknown_326_S63_UM
+  - Unknown_327_S63_UM
+  - Unknown_328_S63_UM
+  - Unknown_329_S63_UM
+  - Denmark_330_S63_EF
+  - Paraguay_331_S63_EF
+  - Unknown_332_S63_UM
+  - The Netherlands_333_S63_EM
+  - Unknown_334_S63_UM
+  - Unknown_335_S63_UM
+  - The Netherlands_336_S63_EM
+  - Unknown_337_S63_UM
+  - Unknown_338_S63_UM
+  - Unknown_339_S63_UM
+  - Unknown_340_S63_UM
+  - Unknown_341_S63_UM
+  - Unknown_342_S61_UM
+  - Unknown_343_S61_UM
+  - Singapore_344_S60_EM
+  - United Kingdom_345_S60_EM
+  - United Kingdom_346_S60_EM
+  - France_347_S60_EM
+  - United Kingdom_348_S60_EM
+  - United Kingdom_349_S60_EM
+  - Unknown_350_S58_UM
+  - Russia_351_S58_EM
+  - Unknown_352_S58_UM
+  - Switzerland_353_S58_EM
+  - Unknown_354_S58_UM
+  - Unknown_355_S58_UM
+  - Hong Kong_356_S53_EF
+  - Türkiye_357_S53_EF
+  - Unknown_358_S53_UM
+  - Unknown_359_S53_UM
+  - Unknown_360_S53_UM
+  - Unknown_361_S53_UM
+  - Unknown_362_S53_UM
+  - Unknown_363_S53_UM
+  - Unknown_364_S53_UM
+  - Ecuador_365_S53_EM
+  - Unknown_366_S53_UM
+  - Colombia_367_S53_EM
+  - Hong Kong_368_S48_EM
+  - Mexico_369_S48_EM
+  - Unknown_370_S43_UM
+  - Unknown_371_S43_UM
+  - Unknown_372_S43_UM
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 🔰 故障转移
